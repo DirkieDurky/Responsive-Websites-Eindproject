@@ -7,36 +7,13 @@
 body {
     margin: 0;
 
-    background-color: #061531;
+    background: url("./background.svg");
+    backdrop-filter: blur(32px);
+
+    background-repeat: repeat;
+    animation: gradient 100s linear infinite;
+
     color: white;
-}
-
-.gradient {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-
-    animation-name: gradient;
-    filter: blur(32px);
-    overflow: hidden;
-
-    z-index: -1;
-}
-
-.gradient.red {
-    background: linear-gradient(90deg, transparent, #2B1428, #2B1428, transparent);
-    background-repeat: repeat;
-    background-size: 200% 200%;
-    animation-duration: 100s;
-}
-
-.gradient.green {
-    background: repeating-linear-gradient(transparent, #0C1F30, #0C1F30, transparent);
-    background-repeat: repeat;
-    background-size: 200% 200%;
-    animation-duration: 80s;
 }
 
 @keyframes gradient {
@@ -45,7 +22,7 @@ body {
     }
 
     to {
-        background-position: 200% 200%
+        background-position: 300% 200%
     }
 }
 
