@@ -4,6 +4,11 @@
     Blue ish: #061531
 */
 
+@font-face {
+    font-family: "renogare";
+    src: url("./renogare.otf")
+}
+
 body {
     margin: 0;
 
@@ -11,8 +16,9 @@ body {
     backdrop-filter: blur(32px);
 
     background-repeat: repeat;
-    animation: gradient 100s linear infinite;
+    animation: gradient 50s linear infinite;
 
+    font-family: "renogare";
     color: white;
 }
 
