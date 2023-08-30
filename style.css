@@ -42,14 +42,12 @@ body {
 .page-header {
     position: sticky;
     top: 0;
-    bottom: 0;
-
 
     backdrop-filter: blur(4px);
     background-color: #0000007F;
 }
 
-.page-header ul {
+.page-header .pages {
     margin: 0 auto;
     padding: 0;
 
@@ -62,13 +60,49 @@ body {
     list-style: none;
 }
 
-.page-header li {
+.page-header .page {
+    position: relative;
     padding: 1rem 1rem;
 
     font-size: larger;
 }
 
+.page-header .page:hover {
+    background-color: #FFFFFF3F;
+}
+
 .page-header a {
     text-decoration: none;
     color: white
+}
+
+.page-header .sections {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+
+    left: 0;
+    right: 0;
+    top: 100%;
+
+    display: none;
+
+    list-style: none;
+
+    backdrop-filter: blur(4px);
+    background-color: #0000007F;
+}
+
+.page-header .page:hover .sections {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.page-header .section {
+    padding: 1rem 1rem;
+}
+
+.page-header .section:hover {
+    background-color: #FFFFFF3F;
 }
