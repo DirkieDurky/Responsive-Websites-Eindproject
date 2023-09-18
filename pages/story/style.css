@@ -1,0 +1,45 @@
+body {
+    margin: 0 2em;
+}
+
+h2 {
+    margin-bottom: 2rem;
+}
+
+.column {
+    flex: 1;
+}
+
+.hor-flex {
+    display: flex;
+    flex: 0.5 1;
+    flex-direction: row;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+.celeste-image-container {
+    position: relative;
+    flex: 0.5;
+    margin: 2rem;
+    width: max-content;
+    height: max-content;
+}
+
+.celeste-image {
+    position: relative;
+    width: 100%;
+    border: 1rem solid white;
+    box-shadow: 0 0 10px black;
+    transform: rotate(5deg);
+}
+
+.celeste-image-container::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    padding: 1rem;
+    background-color: white;
+    transform: rotate(2deg);
+    width: 100%;
+}
