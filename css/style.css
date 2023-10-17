@@ -24,10 +24,10 @@ body {
 
 @keyframes gradient {
     from {
-        background-position: 0% 100%
+        background-position: 0 0
     }
 
     to {
-        background-position: 300% 200%
+        background-position: 300vw 200vh
     }
 }
