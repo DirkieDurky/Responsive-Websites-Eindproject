@@ -8,6 +8,7 @@ h2 {
 
 .column {
     flex: 1;
+    min-width: 22rem;
 }
 
 .hor-flex {
@@ -16,12 +17,16 @@ h2 {
     flex-direction: row;
     gap: 2rem;
     margin: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .celeste-image-container {
     position: relative;
+    display: flex;
     flex: 0.5;
     margin: 2rem;
+    min-width: 18rem;
     width: max-content;
     height: max-content;
 }
