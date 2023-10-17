@@ -6,19 +6,19 @@
 
 @font-face {
     font-family: "renogare";
-    src: url("/assets/renogare.otf")
+    src: url("../assets/renogare.otf")
 }
 
 body {
     margin: 0;
 
-    background: url("/assets/background.svg");
+    background: url("../assets/background.svg");
     backdrop-filter: blur(32px);
 
     background-repeat: repeat;
     animation: gradient 50s linear infinite;
 
-    font-family: "renogare";
+    font-family: "renogare", serif;
     color: white;
 }
 
