@@ -13,7 +13,6 @@ h2 {
 
 .hor-flex {
     display: flex;
-    flex: 0.5 1;
     flex-direction: row;
     gap: 2rem;
     margin: 2rem;
