@@ -11,9 +11,9 @@
 
 body {
     margin: 0;
+    padding-bottom: 5rem;
 
-    background: url("../assets/background.svg");
-    backdrop-filter: blur(32px);
+    background: linear-gradient(#000000BF, #000000BF), url("/assets/overlay.png");
 
     background-repeat: repeat;
     animation: gradient 50s linear infinite;
@@ -24,10 +24,10 @@ body {
 
 @keyframes gradient {
     from {
-        background-position: 0% 0%
+        background-position: 0 0
     }
 
     to {
-        background-position: 300% 200%
+        background-position: 300vw 200vh
     }
 }
