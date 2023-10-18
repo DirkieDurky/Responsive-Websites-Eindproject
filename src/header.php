@@ -5,7 +5,7 @@ $path = str_repeat("../", $depth);
 ?>
 <nav class="page-header">
     <input class="dropdown-toggle" id="pages-toggle" type="checkbox">
-    <label class="menu-toggle" for="pages-toggle">=</label>
+    <label class="menu-toggle" for="pages-toggle"><img class="menu-icon" src="<?= $path . "assets/bars-solid.svg" ?>" alt="menu-icon"></label>
     <ul class="pages">
         <li class="page dropdown">
             <input class="dropdown-toggle" id="mechanics-toggle" type="checkbox">

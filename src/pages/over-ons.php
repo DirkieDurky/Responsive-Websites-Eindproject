@@ -20,7 +20,7 @@
                     <img class="about-me-image" src="../assets/over-ons/dirk-freijters.jpg" alt="picture Tijs">
                 </div>
                 <div class="about-me left">
-                    <div class="title">Over mij, Dirk Freijters</div>
+                    <div class="title"><img class="arrow-icon" src="../assets/over-ons/arrow-left-solid.svg" alt="arrow-left">Over mij, Dirk Freijters</div>
                     <div class="content">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                         et dolore magna
@@ -37,7 +37,7 @@
             </div>
             <div class="section">
                 <div class="about-me right">
-                    <div class="title">Over mij, Cas de Loijer</div>
+                    <div class="title">Over mij, Cas de Loijer<img class="arrow-icon" src="../assets/over-ons/arrow-right-solid.svg" alt="arrow-right"></div>
                     <div class="content">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                         et dolore magna

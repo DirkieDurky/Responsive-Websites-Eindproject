@@ -219,3 +219,9 @@
         pointer-events: none;
     }
 }
+
+.menu-icon {
+    width: 1em;
+    filter: invert();
+    cursor: pointer;
+}
