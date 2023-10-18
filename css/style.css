@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding-bottom: 5rem;
 
-    background: linear-gradient(#000000BF, #000000BF), url("/assets/overlay.png");
+    background: linear-gradient(#000000BF, #000000BF), url("../assets/overlay.png");
 
     background-repeat: repeat;
     animation: gradient 50s linear infinite;
