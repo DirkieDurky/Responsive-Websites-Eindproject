@@ -27,6 +27,10 @@
     background-color: #0000009F;
 }
 
+.menu-toggle {
+    display: none;
+}
+
 .page-header .dropdown-toggle {
     display: none;
 }
@@ -49,6 +53,10 @@
 .page-header .page {
     position: relative;
     width: min-content;
+}
+
+.page-header .page:hover {
+    background-color: #FFFFFF3F;
 }
 
 .page-header .page-title {
@@ -118,45 +126,7 @@
     color: white;
 }
 
-@media (hover: hover) {
-    .menu-toggle {
-        display: none;
-    }
-
-    .page-header .pages {
-        flex-wrap: wrap;
-    }
-
-    .page-header .page:hover {
-        background-color: #FFFFFF3F;
-    }
-
-    .page-header .topic:hover {
-        background-color: #FFFFFF3F;
-    }
-
-    .page-header .page.dropdown:hover>.dropdown-label>.dropdown-arrow::after {
-        transform: translateX(0.5rem) rotateZ(90deg);
-    }
-
-    .page-header .page.dropdown:hover .sections {
-        position: absolute;
-        top: 100%;
-        left: 0;
-
-        display: flex;
-
-        background-color: #0000009F;
-        backdrop-filter: blur(16px);
-    }
-
-    .page-header .topics {
-        background-color: #0000009F;
-        backdrop-filter: blur(16px);
-    }
-}
-
-@media (hover: none) {
+@media screen and (max-width: 1024px) {
     .menu-toggle {
         padding: 1rem 2rem;
         width: 100%;
@@ -171,8 +141,12 @@
         flex-direction: column;
     }
 
-    .page-header input:checked~.pages {
+    .page-header:hover .pages {
         display: flex;
+    }
+
+    .page-header .page:hover {
+        background-color: transparent;
     }
 
     .page-header .dropdown-toggle:checked~.dropdown-label>.dropdown-arrow::after {
@@ -183,8 +157,42 @@
         display: flex;
     }
 
-    .page-header .section.dropdown .dropdown-label {
+    .page-header .dropdown-label .dropdown-arrow {
         pointer-events: none;
+    }
+}
+
+@media not screen and (max-width: 1024px) {
+    .page-header .page.dropdown:hover>.dropdown-label>.dropdown-arrow::after {
+        transform: translateX(0.5rem) rotateZ(90deg);
+    }
+
+    .page-header .page.dropdown:hover .sections {
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        display: flex;
+
+        background-color: #0000009F;
+        backdrop-filter: blur(16px);
+    }
+}
+
+@media screen and (hover: hover) {
+    .page-header .topic:hover {
+        background-color: #FFFFFF3F;
+    }
+
+    .page-header .topics {
+        background-color: #0000009F;
+        backdrop-filter: blur(16px);
+    }
+}
+
+@media screen and (hover: none) {
+    .page-header .dropdown-toggle:checked~.sections {
+        display: flex;
     }
 
     .page-header .dropdown-arrow {
