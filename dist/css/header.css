@@ -16,6 +16,8 @@
 
     backdrop-filter: blur(4px);
     background-color: #0000007F;
+
+    z-index: 1;
 }
 
 .page-header .menu {
