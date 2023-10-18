@@ -33,11 +33,11 @@ $path = str_repeat("../", $depth);
                         <a class="dropdown-arrow" href="<?= $path ?>mechanics#chapter-<?= $chapter ?>"><?= $chapterName ?></a>
                         <ul class="topics">
                             <li class="topic"><a href="<?= $path ?>mechanics#chapter-<?= $chapter ?>">Naar onderdeel</a></li>
-                            <?php foreach ($mechanics as $mechanic) : ?>
-                                <?php if ($mechanic->home != $chapter) {
+                            <?php foreach ($mechanics as $headerMechanic) : ?>
+                                <?php if ($headerMechanic->home != $chapter) {
                                     continue;
                                 } ?>
-                                <li class="topic"><a href="<?= $path ?>mechanics/mechanic/<?= $mechanic->name ?>.html"><?= $mechanic->name ?></a></li>
+                                <li class="topic"><a href="<?= $path ?>mechanics/mechanic/<?= $headerMechanic->name ?>.html"><?= $headerMechanic->name ?></a></li>
                             <?php endforeach ?>
                         </ul>
                     </li>
