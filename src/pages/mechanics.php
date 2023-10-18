@@ -18,7 +18,7 @@
         <h1>Mechanics</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, quis animi deleniti adipisci corrupti sapiente quasi tempora incidunt nihil similique eaque omnis inventore, ad vitae? Quasi sit alias animi porro nesciunt ducimus distinctio excepturi quod eius consectetur consequuntur, facere quas dolorum nisi esse beatae, accusantium debitis vel modi. Delectus aperiam, eaque ea veniam quaerat adipisci natus recusandae dolore. Dolorum nam corporis voluptatum alias consequatur, corrupti, deleniti at laborum expedita mollitia dolorem dicta temporibus cupiditate quisquam, nulla dignissimos. Autem rem doloribus quaerat ullam non deleniti officiis doloremque sunt. Exercitationem animi perspiciatis nesciunt ipsam minus eaque aperiam, placeat adipisci, nulla amet ut.</p>
 
-        <h2 class="chapter">All chapters</h2>
+        <h2 class="chapter" id="chapter-all">All chapters</h2>
         <ul class="mechanics">
             <?php foreach ($mechanics as $mechanic) : ?>
                 <?php if ($mechanic->home !== "all") {
@@ -48,7 +48,7 @@
 
         ?>
         <?php foreach ($sections as $section => $sectionName) : ?>
-            <h2 class="chapter" id="chapter-1"><?= $sectionName ?></h2>
+            <h2 class="chapter" id="chapter-<?= $section ?>"><?= $sectionName ?></h2>
             <ul class="mechanics">
                 <?php foreach ($mechanics as $mechanic) : ?>
                     <?php if ($mechanic->home != $section) {
