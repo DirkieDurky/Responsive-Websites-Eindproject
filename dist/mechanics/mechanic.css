@@ -1,0 +1,17 @@
+.mechanic .card {
+    float: right;
+    margin: 1rem;
+    padding: 1rem;
+
+    background-color: #0000007F;
+    text-align: center;
+}
+
+.mechanic ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    white-space: nowrap;
+}

@@ -41,7 +41,7 @@
                 } ?>
                 <li class="mechanic">
                     <img class="image" src="../assets/Temp.gif">
-                    <h2 class="name"><?= $mechanic->name ?></h2>
+                    <h2 class="name"><a href="./mechanic/<?= $mechanic->name ?>.html"><?= $mechanic->name ?></a></h2>
                     <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. At dolor ullam tempore consequuntur repudiandae nemo atque dicta tenetur perferendis optio consequatur natus earum impedit aliquid dolore ab, odio maiores reprehenderit.</p>
                 </li>
             <?php endforeach ?>
@@ -71,7 +71,7 @@
                     } ?>
                     <li class="mechanic">
                         <img class="image" src="../assets/Temp.gif">
-                        <h2 class="name"><?= $mechanic->name ?></h2>
+                        <h2 class="name"><a href="./mechanic/<?= $mechanic->name ?>.html"><?= $mechanic->name ?></a></h2>
                         <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. At dolor ullam tempore consequuntur repudiandae nemo atque dicta tenetur perferendis optio consequatur natus earum impedit aliquid dolore ab, odio maiores reprehenderit.</p>
                         <?php if (count($mechanic->chapters) === 1) : ?>
                             <p class="chapters">Only found in chapter: <?= $mechanic->chapters[0] ?></p>
