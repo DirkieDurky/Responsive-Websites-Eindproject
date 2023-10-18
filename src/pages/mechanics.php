@@ -12,22 +12,7 @@
 </head>
 
 <body>
-    <nav class="page-header">
-        <span class="menu">=</span>
-        <ul class="pages">
-            <li class="page dropdown">
-                <a href="./mechanics">[TODO]</a>
-                <ul class="sections">
-                    <li class="section"><a href="./mechanics">Naar pagina</a></li>
-                    <li class="section"><a href="./mechanics">1</a></li>
-                    <li class="section"><a href="./mechanics">2</a></li>
-                    <li class="section"><a href="./mechanics">3</a></li>
-                    <li class="section"><a href="./mechanics">4</a></li>
-                    <li class="section"><a href="./mechanics">5</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
+    <?php require("src/header.php"); ?>
 
     <main>
         <h1>Mechanics</h1>

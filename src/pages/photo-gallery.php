@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Celeste - Fotogallerij</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    [Insert header here]
+    <?php require("src/header.php"); ?>
+
     <main class="photo-gallery">
         <div class="gallery">
             <img class="gallery-image" src="../assets/photo-gallery/0_strawbs.png" alt="gallery-image">

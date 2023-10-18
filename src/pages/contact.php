@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Celeste - Contact</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    [Insert header here]<br>
+    <?php require("src/header.php"); ?>
+
     <main class="contact">
         Heeft u een vraag, suggestie, of wilt u om een andere reden contact met ons opnemen? Dat kan via dit formulier!
         <form class="contact-form">

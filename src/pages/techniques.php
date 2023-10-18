@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Celeste - Techniques</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    [Insert header here]
+    <?php require("src/header.php"); ?>
+
     <main class="techniques">
         <h1>Techniques</h1>
         <p>
