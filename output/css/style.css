@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "renogare";
+    src: url("../assets/renogare.otf")
+}
+
+body {
+    margin: 0;
+
+    background: linear-gradient(#000000BF, #000000BF), url("/assets/overlay.png");
+
+    background-repeat: repeat;
+    animation: gradient 50s linear infinite;
+
+    font-family: "renogare", serif;
+    color: white;
+}
+
+@keyframes gradient {
+    from {
+        background-position: 0 0
+    }
+
+    to {
+        background-position: 300vw 200vh
+    }
+}
+
+main {
+    padding: 1rem 1rem 5rem 1rem;
+}
+
+a {
+    color: #1f1fff;
+}
+
+a:visited {
+    color: #9f009f;
+}
