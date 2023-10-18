@@ -14,6 +14,7 @@
     <?php require("src/header.php"); ?>
 
     <main class="contact">
+        <h1>Contact</h1>
         Heeft u een vraag, suggestie, of wilt u om een andere reden contact met ons opnemen? Dat kan via dit formulier!
         <form class="contact-form">
             <label>

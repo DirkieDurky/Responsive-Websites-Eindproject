@@ -4,7 +4,10 @@ body,
     height: 100%;
     padding: 0;
     margin: 0;
-    overflow: hidden;
+}
+
+.contact {
+    padding: 1rem 1rem 5rem 1rem;
 }
 
 .contact-form {
