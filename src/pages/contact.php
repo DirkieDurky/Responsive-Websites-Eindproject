@@ -29,6 +29,7 @@
                 Bericht<br>
                 <textarea placeholder="Bericht"></textarea>
             </label>
+            <input type="submit" value="Versturen">
         </form>
     </main>
 </body>

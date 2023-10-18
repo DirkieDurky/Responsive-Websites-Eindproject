@@ -20,7 +20,8 @@ body,
     text-align: center;
 }
 
-.contact-form input {
+.contact-form input,
+.contact-form textarea {
     padding: 0.5rem;
 }
 
