@@ -154,6 +154,7 @@
     }
 
     .page-header .dropdown-toggle:checked~.sections {
+        padding: 0 0 0 1rem;
         display: flex;
     }
 
@@ -177,16 +178,16 @@
         background-color: #0000009F;
         backdrop-filter: blur(16px);
     }
+
+    .page-header .topics {
+        background-color: #0000009F;
+        backdrop-filter: blur(16px);
+    }
 }
 
 @media screen and (hover: hover) {
     .page-header .topic:hover {
         background-color: #FFFFFF3F;
-    }
-
-    .page-header .topics {
-        background-color: #0000009F;
-        backdrop-filter: blur(16px);
     }
 }
 
