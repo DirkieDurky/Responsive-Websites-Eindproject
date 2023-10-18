@@ -9,7 +9,7 @@ $path = str_repeat("../", $depth);
     <ul class="pages">
         <li class="page dropdown">
             <input class="dropdown-toggle" id="mechanics-toggle" type="checkbox">
-            <label class="dropdown-label" for="mechanics-toggle"><a class="page-title dropdown-arrow" href="<?= $path ?>mechanics">Mechanics</a></label>
+            <label class="dropdown-label page-title" for="mechanics-toggle"><a class="dropdown-arrow" href="<?= $path ?>mechanics">Mechanics</a></label>
             <ul class="sections">
                 <?php
 
@@ -46,7 +46,7 @@ $path = str_repeat("../", $depth);
         </li>
         <li class="page dropdown">
             <input class="dropdown-toggle" id="techniques-toggle" type="checkbox">
-            <label class="dropdown-label" for="techniques-toggle"><a class="page-title dropdown-arrow" href="<?= $path ?>techniques">Techniques</a></label>
+            <label class="dropdown-label page-title" for="techniques-toggle"><a class="dropdown-arrow" href="<?= $path ?>techniques">Techniques</a></label>
             <ul class="sections">
                 <li class="section"><a href="<?= $path ?>techniques#dash-tech">Dash tech</a></li>
                 <li class="section"><a href="<?= $path ?>techniques#dashless-tech">Dashless tech</a></li>
@@ -54,7 +54,7 @@ $path = str_repeat("../", $depth);
         </li>
         <li class="page dropdown">
             <input class="dropdown-toggle" id="story-toggle" type="checkbox">
-            <label class="dropdown-label" for="story-toggle"><a class="page-title dropdown-arrow" href="<?= $path ?>story">Story</a></label>
+            <label class="dropdown-label page-title" for="story-toggle"><a class="dropdown-arrow" href="<?= $path ?>story">Story</a></label>
             <ul class="sections">
                 <li class="section"><a href="<?= $path ?>story">Naar pagina</a></li>
                 <li class="section"><a href="<?= $path ?>story#chapter-1">Chapter 1</a></li>
@@ -68,8 +68,8 @@ $path = str_repeat("../", $depth);
                 <li class="section"><a href="<?= $path ?>story#chapter-9">Chapter 9</a></li>
             </ul>
         </li>
-        <li class="page"><a class="page-title" href="<?= $path ?>photo-gallery">Fotogallerij</a></li>
-        <li class="page"><a class="page-title" href="<?= $path ?>over-ons">Over ons</a></li>
-        <li class="page"><a class="page-title" href="<?= $path ?>contact">Contact</a></li>
+        <li class="page page-title"><a href="<?= $path ?>photo-gallery">Fotogallerij</a></li>
+        <li class="page page-title"><a href="<?= $path ?>over-ons">Over ons</a></li>
+        <li class="page page-title"><a href="<?= $path ?>contact">Contact</a></li>
     </ul>
 </nav>

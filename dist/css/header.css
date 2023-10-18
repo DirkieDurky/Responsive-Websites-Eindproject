@@ -56,7 +56,7 @@
 }
 
 
-.page-header .page-title {
+.page-header .page-title>a {
     display: inline-block;
     padding: 1rem;
 }
@@ -88,12 +88,12 @@
     width: 100%;
     box-sizing: border-box;
 
-    transition: background-color 0.5s ease-in;
+    transition: background-color 400ms ease-in;
 }
 
 .page-header .section:hover {
     background-color: #FFFFFF3F;
-    transition: background-color 0.5s ease-out;
+    transition: background-color 200ms ease-out;
 }
 
 .page-header .topics {
@@ -191,22 +191,22 @@
 }
 
 @media screen and (hover: hover) {
-    .page-header .dropdown-label {
-        transition: background-color 0.5s ease-in;
+    .page-header .page-title {
+        transition: background-color 400ms ease-in;
     }
 
-    .page-header .dropdown-label:hover {
+    .page-header .page-title:hover {
         background-color: #FFFFFF3F;
-        transition: background-color 0.5s ease-out;
+        transition: background-color 200ms ease-out;
     }
 
     .page-header .topic {
-        transition: background-color 0.5s ease-in;
+        transition: background-color 400ms ease-in;
     }
 
     .page-header .topic:hover {
         background-color: #FFFFFF3F;
-        transition: background-color 0.5s ease-out;
+        transition: background-color 200ms ease-out;
     }
 }
 
