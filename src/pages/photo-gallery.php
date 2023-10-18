@@ -20,7 +20,7 @@
 
             foreach ($photos as $photo) {
             ?>
-                <img class="gallery-image" src="<?= "../assets/photo-gallery/" . $photo ?>" alt="gallery-image">
+                <img src="<?= "../assets/photo-gallery/" . $photo ?>" alt="gallery-image">
             <?php
             }
             ?>
