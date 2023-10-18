@@ -55,9 +55,6 @@
     width: min-content;
 }
 
-.page-header .page:hover {
-    background-color: #FFFFFF3F;
-}
 
 .page-header .page-title {
     display: inline-block;
@@ -90,6 +87,13 @@
 
     width: 100%;
     box-sizing: border-box;
+
+    transition: background-color 0.5s ease-in;
+}
+
+.page-header .section:hover {
+    background-color: #FFFFFF3F;
+    transition: background-color 0.5s ease-out;
 }
 
 .page-header .topics {
@@ -117,9 +121,6 @@
     transform: translateX(1rem);
 }
 
-.page-header .section:hover {
-    background-color: #FFFFFF3F;
-}
 
 .page-header a {
     text-decoration: none;
@@ -158,6 +159,10 @@
         display: flex;
     }
 
+    .page-header .dropdown-label {
+        cursor: pointer;
+    }
+
     .page-header .dropdown-label .dropdown-arrow {
         pointer-events: none;
     }
@@ -186,8 +191,22 @@
 }
 
 @media screen and (hover: hover) {
+    .page-header .dropdown-label {
+        transition: background-color 0.5s ease-in;
+    }
+
+    .page-header .dropdown-label:hover {
+        background-color: #FFFFFF3F;
+        transition: background-color 0.5s ease-out;
+    }
+
+    .page-header .topic {
+        transition: background-color 0.5s ease-in;
+    }
+
     .page-header .topic:hover {
         background-color: #FFFFFF3F;
+        transition: background-color 0.5s ease-out;
     }
 }
 
