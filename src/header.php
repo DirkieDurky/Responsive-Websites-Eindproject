@@ -10,7 +10,6 @@ $path = str_repeat("../", $depth);
         <li class="page dropdown">
             <input class="dropdown-toggle" id="mechanics-toggle" type="checkbox">
             <label class="dropdown-label" for="mechanics-toggle"><a class="page-title dropdown-arrow" href="<?= $path ?>mechanics">Mechanics</a></label>
-            <a class="goto" href="<?= $path ?>mechanics">Naar pagina</a>
             <ul class="sections">
                 <?php
 
@@ -28,11 +27,12 @@ $path = str_repeat("../", $depth);
                 ];
 
                 ?>
+                <li class="section"><a href=" <?= $path ?>mechanics">Naar pagina</a></li>
                 <?php foreach ($chapters as $chapter => $chapterName) : ?>
                     <li class="section dropdown">
                         <a class="dropdown-arrow" href="<?= $path ?>mechanics#chapter-<?= $chapter ?>"><?= $chapterName ?></a>
                         <ul class="topics">
-                            <li class="topic goto"><a href="<?= $path ?>mechanics#chapter-<?= $chapter ?>">Naar onderdeel</a></li>
+                            <li class="topic"><a href="<?= $path ?>mechanics#chapter-<?= $chapter ?>">Naar onderdeel</a></li>
                             <?php foreach ($mechanics as $mechanic) : ?>
                                 <?php if ($mechanic->home != $chapter) {
                                     continue;
