@@ -141,7 +141,7 @@
         flex-direction: column;
     }
 
-    .page-header:hover .pages {
+    .page-header .dropdown-toggle:checked~.pages {
         display: flex;
     }
 
