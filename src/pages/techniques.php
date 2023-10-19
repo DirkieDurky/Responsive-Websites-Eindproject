@@ -15,6 +15,7 @@
 
     <main class="techniques">
         <h1>Techniques</h1>
+        <hr />
         <p><?= Lorem::paragraph() ?></p>
 
         <h2 id="dash-tech">Technieken met dash</h2>

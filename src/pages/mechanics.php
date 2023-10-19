@@ -16,6 +16,7 @@
 
     <main>
         <h1>Mechanics</h1>
+        <hr />
         <p><?= Lorem::paragraph() ?></p>
 
         <h2 class="chapter" id="chapter-all">Alle hoofdstukken</h2>

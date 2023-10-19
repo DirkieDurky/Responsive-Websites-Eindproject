@@ -14,6 +14,9 @@
     <?php require("src/header.php"); ?>
 
     <main class="photo-gallery">
+        <h1>Gallerij</h1>
+        <hr />
+
         <div class="gallery">
             <?php
             $photos = array_values(array_diff(scandir(__DIR__ . "/../../dist/assets/photo-gallery"), ["..", "."]));
