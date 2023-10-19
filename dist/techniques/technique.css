@@ -1,0 +1,8 @@
+.technique .card {
+    float: right;
+    text-align: center;
+    text-wrap: wrap;
+
+    width: min-content;
+    padding: 1rem 2rem;
+}

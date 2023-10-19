@@ -43,3 +43,7 @@ h2 {
     transform: rotate(2deg);
     /* width: 100%; */
 }
+
+.techniques p {
+    max-width: 60rem;
+}

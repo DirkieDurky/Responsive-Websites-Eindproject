@@ -45,12 +45,34 @@ $path = str_repeat("../", $depth);
                 <?php endforeach ?>
             </ul>
         </li>
+
         <li class="page dropdown">
             <input class="dropdown-toggle" id="techniques-toggle" type="checkbox">
-            <label class="dropdown-label page-title" for="techniques-toggle"><a class="dropdown-arrow" href="<?= $path ?>techniques/index.html">Technieken</a></label>
+            <label class="dropdown-label page-title" for="techniques-toggle"><a class="dropdown-arrow" href="<?= $path ?>techniques/index.html">Techniques</a></label>
             <ul class="sections">
-                <li class="section"><a href="<?= $path ?>techniques/index.html#dash-tech">Dash tech</a></li>
-                <li class="section"><a href="<?= $path ?>techniques/index.html#dashless-tech">Dashless tech</a></li>
+                <?php
+
+                $types = [
+                    "dash-tech" => "Dash Tech",
+                    "dashless-tech" => "Dashless Tech",
+                ];
+
+                ?>
+                <li class="section"><a href="<?= $path ?>techniques/index.html">Naar pagina</a></li>
+                <?php foreach ($types as $type => $typeName) : ?>
+                    <li class="section dropdown">
+                        <a class="dropdown-arrow" href="<?= $path ?>techniques/index.html#<?= $type ?>"><?= $typeName ?></a>
+                        <ul class="topics">
+                            <li class="topic"><a href="<?= $path ?>techniques/index.html#<?= $type ?>">Naar onderdeel</a></li>
+                            <?php foreach ($techniques as $headerTechnique) : ?>
+                                <?php if ($headerTechnique->type != $type) {
+                                    continue;
+                                } ?>
+                                <li class="topic"><a href="<?= $path ?>techniques/technique/<?= $headerTechnique->name ?>.html"><?= $headerTechnique->name ?></a></li>
+                            <?php endforeach ?>
+                        </ul>
+                    </li>
+                <?php endforeach ?>
             </ul>
         </li>
         <li class="page dropdown">

@@ -7,7 +7,7 @@
     <title>Celeste - Techniques</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="techniques.css">
 </head>
 
 <body>
@@ -18,102 +18,30 @@
         <p><?= Lorem::paragraph() ?></p>
 
         <h2 id="dash-tech">Dash Tech</h2>
-        <div class="column">
-            <p><?= Lorem::paragraph() ?></p>
-        </div>
-        <h3>Superdash (Super)</h3>
-        <div class="hor-flex">
-            <div class="column">
-                <p><?= Lorem::paragraph() ?></p>
-            </div>
-            <div class="celeste-image-container">
-                <img class="celeste-image" src="../assets/techniques/super-dash.gif" alt="Super dash showcase">
-            </div>
-        </div>
-        <h3>Hyperdash (Hyper)</h3>
-        <div class="hor-flex">
-            <div class="column">
-                <p><?= Lorem::paragraph() ?></p>
-            </div>
-        </div>
-        <h3>Wavedash</h3>
-        <div class="hor-flex">
-            <div class="column">
-                <p><?= Lorem::paragraph() ?></p>
-            </div>
-            <div class="celeste-image-container">
-                <img class="celeste-image" src="../assets/techniques/wavedash.gif" alt="Wavedash showcase">
-            </div>
-        </div>
-        <h3>Ultradash (Ultra)</h3>
-        <div class="hor-flex">
-            <div class="column">
-                <p><?= Lorem::paragraph() ?></p>
-            </div>
-        </div>
-        <h3>Demodash (Demo)</h3>
-        <div class="hor-flex">
-            <div class="column">
-                <p><?= Lorem::paragraph() ?></p>
-            </div>
-        </div>
-        <h3>Wallbounce (wb)</h3>
-        <div class="hor-flex">
-            <div class="column">
-                <p><?= Lorem::paragraph() ?></p>
-            </div>
-            <div class="celeste-image-container">
-                <img class="celeste-image" src="../assets/techniques/wallbouncing.gif" alt="Wallbounce showcase">
-            </div>
-        </div>
+        <?php
+        foreach (array_filter($techniques, function ($item) {
+            return $item->type == "dash-tech";
+        }) as $technique) {
+        ?>
+            <h3><a href="./technique/<?= $technique->name ?>.html"><?= $technique->name ?></a></h3>
+            <p>
+                <?= Lorem::paragraph(3); ?>
+            </p>
+        <?php
+        }
+        ?>
         <h2 id="dashless-tech">Dashless Tech</h2>
-        <div class="column">
-            <p><?= Lorem::paragraph() ?></p>
-        </div>
-        <h3>Bunnyhop (Bhop)</h3>
-        <div class="hor-flex">
-            <div class="column">
-                <p><?= Lorem::paragraph() ?></p>
-            </div>
-        </div>
-        <h3>Cornerkick</h3>
-        <div class="hor-flex">
-            <div class="column">
-                <p><?= Lorem::paragraph() ?></p>
-            </div>
-        </div>
-        <h3>Crouch Jump / Crouch Climb</h3>
-        <div class="hor-flex">
-            <div class="column">
-                <p><?= Lorem::paragraph() ?></p>
-            </div>
-        </div>
-        <h3>Neutral Jump (Neutral)</h3>
-        <div class="hor-flex">
-            <div class="column">
-                <p><?= Lorem::paragraph() ?></p>
-            </div>
-            <div class="celeste-image-container">
-                <img class="celeste-image" src="../assets/techniques/neutral-jumping.gif" alt="Neutral jump showcase">
-            </div>
-        </div>
-        <h3>5 Jump</h3>
-        <div class="hor-flex">
-            <div class="column">
-                <p><?= Lorem::paragraph() ?></p>
-            </div>
-        </div>
-        <h3>Cornerboost (cb)</h3>
-        <div class="hor-flex">
-            <div class="column">
-                <p><?= Lorem::paragraph() ?></p>
-            </div>
-        </div>
-        <h3>Throwable Backboost (Backboost)</h3>
-        <div class="hor-flex">
-            <div class="column">
-                <p><?= Lorem::paragraph() ?></p>
-            </div>
-        </div>
+        <?php
+        foreach (array_filter($techniques, function ($item) {
+            return $item->type == "dashless-tech";
+        }) as $technique) {
+        ?>
+            <h3><a href="./technique/<?= $technique->name ?>.html"><?= $technique->name ?></a></h3>
+            <p>
+                <?= Lorem::paragraph(3); ?>
+            </p>
+        <?php
+        }
+        ?>
     </main>
 </body>
