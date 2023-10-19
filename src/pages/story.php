@@ -20,7 +20,7 @@
             echo $lipsum->words(40);
             ?>
         </p>
-        <h2 id="chapter-1">Chapter 1</h2>
+        <h2 id="chapter-1">Hoofdstuk 1 - Forsaken City</h2>
         <div class="hor-flex">
             <div class="celeste-image-container">
                 <img class="celeste-image" src="../assets/celeste-complete-screens/complete-1.png" alt="Chapter 1">
@@ -52,7 +52,7 @@
                 </p>
             </div>
         </div>
-        <h2 id="chapter-2">Chapter 2</h2>
+        <h2 id="chapter-2">Hoofdstuk 2 - Old Site</h2>
         <div class="hor-flex">
             <div class="column">
                 <?php
@@ -63,7 +63,7 @@
                 <img class="celeste-image" src="../assets/celeste-complete-screens/complete-2.png" alt="Chapter 1">
             </div>
         </div>
-        <h2 id="chapter-3">Chapter 3</h2>
+        <h2 id="chapter-3">Hoofdstuk 3 - Celestial Resort</h2>
         <div class="hor-flex">
             <div class="celeste-image-container">
                 <img class="celeste-image" src="../assets/celeste-complete-screens/complete-3.png" alt="Chapter 1">
@@ -74,7 +74,7 @@
                 ?>
             </div>
         </div>
-        <h2 id="chapter-4">Chapter 4</h2>
+        <h2 id="chapter-4">Hoofdstuk 4 - Golden Ridge</h2>
         <div class="hor-flex">
             <div class="column">
                 <?php
@@ -85,7 +85,7 @@
                 <img class="celeste-image" src="../assets/celeste-complete-screens/complete-4.png" alt="Chapter 1">
             </div>
         </div>
-        <h2 id="chapter-5">Chapter 5</h2>
+        <h2 id="chapter-5">Hoofdstuk 5 - Mirror Temple</h2>
         <div class="hor-flex">
             <div class="celeste-image-container">
                 <img class="celeste-image" src="../assets/celeste-complete-screens/complete-5.png" alt="Chapter 1">
@@ -96,7 +96,7 @@
                 ?>
             </div>
         </div>
-        <h2 id="chapter-6">Chapter 6</h2>
+        <h2 id="chapter-6">Hoofdstuk 6 - Reflection</h2>
         <div class="hor-flex">
             <div class="column">
                 <?php
@@ -107,7 +107,7 @@
                 <img class="celeste-image" src="../assets/celeste-complete-screens/complete-6.png" alt="Chapter 1">
             </div>
         </div>
-        <h2 id="chapter-7">Chapter 7</h2>
+        <h2 id="chapter-7">Hoofdstuk 7 - Summit</h2>
         <div class="hor-flex">
             <div class="celeste-image-container">
                 <img class="celeste-image" src="../assets/celeste-complete-screens/complete-7.png" alt="Chapter 1">
@@ -118,7 +118,7 @@
                 ?>
             </div>
         </div>
-        <h2 id="chapter-8">Chapter 8</h2>
+        <h2 id="chapter-8">Hoofdstuk 8 - Core</h2>
         <div class="hor-flex">
             <div class="column">
                 <?php
@@ -129,7 +129,7 @@
                 <img class="celeste-image" src="../assets/celeste-complete-screens/complete-8.png" alt="Chapter 1">
             </div>
         </div>
-        <h2 id="chapter-9">Chapter 9</h2>
+        <h2 id="chapter-9">Hoofdstuk 9 - Farewell</h2>
         <div class="hor-flex">
             <div class="celeste-image-container">
                 <img class="celeste-image" src="../assets/celeste-complete-screens/complete-9.png" alt="Chapter 1">

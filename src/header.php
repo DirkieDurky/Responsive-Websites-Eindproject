@@ -14,16 +14,16 @@ $path = str_repeat("../", $depth);
                 <?php
 
                 $chapters = [
-                    "all" => "All Chapters",
-                    "1" => "Forsaken City",
-                    "2" => "Old Site",
-                    "3" => "Celestial Resort",
-                    "4" => "Golden Ridge",
-                    "5" => "Mirror Temple",
-                    "6" => "Reflection",
-                    "7" => "Summit",
-                    "8" => "Core",
-                    "9" => "Farewell",
+                    "all" => "Alle hoofdstukken",
+                    "1" => "Hoofdstuk 1 - Forsaken City",
+                    "2" => "Hoofdstuk 2 - Old Site",
+                    "3" => "Hoofdstuk 3 - Celestial Resort",
+                    "4" => "Hoofdstuk 4 - Golden Ridge",
+                    "5" => "Hoofdstuk 5 - Mirror Temple",
+                    "6" => "Hoofdstuk 6 - Reflection",
+                    "7" => "Hoofdstuk 7 - Summit",
+                    "8" => "Hoofdstuk 8 - Core",
+                    "9" => "Hoofdstuk 9 - Farewell",
                 ];
 
                 ?>
@@ -46,7 +46,7 @@ $path = str_repeat("../", $depth);
         </li>
         <li class="page dropdown">
             <input class="dropdown-toggle" id="techniques-toggle" type="checkbox">
-            <label class="dropdown-label page-title" for="techniques-toggle"><a class="dropdown-arrow" href="<?= $path ?>techniques">Techniques</a></label>
+            <label class="dropdown-label page-title" for="techniques-toggle"><a class="dropdown-arrow" href="<?= $path ?>techniques">Technieken</a></label>
             <ul class="sections">
                 <li class="section"><a href="<?= $path ?>techniques#dash-tech">Dash tech</a></li>
                 <li class="section"><a href="<?= $path ?>techniques#dashless-tech">Dashless tech</a></li>
@@ -54,18 +54,29 @@ $path = str_repeat("../", $depth);
         </li>
         <li class="page dropdown">
             <input class="dropdown-toggle" id="story-toggle" type="checkbox">
-            <label class="dropdown-label page-title" for="story-toggle"><a class="dropdown-arrow" href="<?= $path ?>story">Story</a></label>
+            <label class="dropdown-label page-title" for="story-toggle"><a class="dropdown-arrow" href="<?= $path ?>story">Verhaal</a></label>
             <ul class="sections">
-                <li class="section"><a href="<?= $path ?>story">Naar pagina</a></li>
-                <li class="section"><a href="<?= $path ?>story#chapter-1">Chapter 1</a></li>
-                <li class="section"><a href="<?= $path ?>story#chapter-2">Chapter 2</a></li>
-                <li class="section"><a href="<?= $path ?>story#chapter-3">Chapter 3</a></li>
-                <li class="section"><a href="<?= $path ?>story#chapter-4">Chapter 4</a></li>
-                <li class="section"><a href="<?= $path ?>story#chapter-5">Chapter 5</a></li>
-                <li class="section"><a href="<?= $path ?>story#chapter-6">Chapter 6</a></li>
-                <li class="section"><a href="<?= $path ?>story#chapter-7">Chapter 7</a></li>
-                <li class="section"><a href="<?= $path ?>story#chapter-8">Chapter 8</a></li>
-                <li class="section"><a href="<?= $path ?>story#chapter-9">Chapter 9</a></li>
+                <?php
+                $chapters = [
+                    "1" => "Hoofdstuk 1 - Forsaken City",
+                    "2" => "Hoofdstuk 2 - Old Site",
+                    "3" => "Hoofdstuk 3 - Celestial Resort",
+                    "4" => "Hoofdstuk 4 - Golden Ridge",
+                    "5" => "Hoofdstuk 5 - Mirror Temple",
+                    "6" => "Hoofdstuk 6 - Reflection",
+                    "7" => "Hoofdstuk 7 - Summit",
+                    "8" => "Hoofdstuk 8 - Core",
+                    "9" => "Hoofdstuk 9 - Farewell",
+                ];
+                ?>
+                <li class="section"><a href="story">Naar hoofdstuk</a></li>
+                <?php
+                foreach ($chapters as $chapter => $chapterName) {
+                ?>
+                    <li class="section"><a href="story#chapter-<?= $chapter ?>"><?= $chapterName ?></a></li>
+                <?php
+                }
+                ?>
             </ul>
         </li>
         <li class="page page-title"><a href="<?= $path ?>photo-gallery">Fotogallerij</a></li>

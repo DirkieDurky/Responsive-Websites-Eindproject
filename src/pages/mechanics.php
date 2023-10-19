@@ -22,7 +22,7 @@
             ?>
         </p>
 
-        <h2 class="chapter" id="chapter-all">All chapters</h2>
+        <h2 class="chapter" id="chapter-all">Alle hoofdstukken</h2>
         <ul class="mechanics">
             <?php foreach ($mechanics as $mechanic) : ?>
                 <?php if ($mechanic->home !== "all") {
@@ -43,15 +43,15 @@
         <?php
 
         $sections = [
-            "1" => "Chapter 1 - Forsaken City",
-            "2" => "Chapter 2 - Old Site",
-            "3" => "Chapter 3 - Celestial Resort",
-            "4" => "Chapter 4 - Golden Ridge",
-            "5" => "Chapter 5 - Mirror Temple",
-            "6" => "Chapter 6 - Reflection",
-            "7" => "Chapter 7 - Summit",
-            "8" => "Chapter 8 - Core",
-            "9" => "Chapter 9 - Farewell",
+            "1" => "Hoofdstuk 1 - Forsaken City",
+            "2" => "Hoofdstuk 2 - Old Site",
+            "3" => "Hoofdstuk 3 - Celestial Resort",
+            "4" => "Hoofdstuk 4 - Golden Ridge",
+            "5" => "Hoofdstuk 5 - Mirror Temple",
+            "6" => "Hoofdstuk 6 - Reflection",
+            "7" => "Hoofdstuk 7 - Summit",
+            "8" => "Hoofdstuk 8 - Core",
+            "9" => "Hoofdstuk 9 - Farewell",
         ];
 
         ?>
