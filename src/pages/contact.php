@@ -7,7 +7,7 @@
     <title>Celeste - Contact</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/pages.css">
 </head>
 
 <body>
@@ -17,25 +17,24 @@
         <h1>Contact</h1>
         <div class="content">
             Heb je een vraag, suggestie, of wil je om een andere reden contact met ons opnemen? Dat kan via dit formulier!
-            <div class="form-container">
-                <form class="contact-form">
-                    <div class="label-container">
-                        <label>
-                            Naam<br>
-                            <input type="text" placeholder="Naam">
-                        </label>
-                        <label>
-                            Email<br>
-                            <input type="text" placeholder="Email">
-                        </label>
-                    </div>
+            <form class="contact-form">
+                <div class="label-container">
                     <label>
-                        Bericht<br>
-                        <textarea placeholder="Bericht"></textarea>
+                        Naam<br>
+                        <input type="text" placeholder="Naam">
                     </label>
-                    <input type="submit" value="Versturen">
-                </form>
-            </div>
+                    <label>
+                        Email<br>
+                        <input type="text" placeholder="Email">
+                    </label>
+                </div>
+                <label>
+                    Bericht<br>
+                    <textarea placeholder="Bericht"></textarea>
+                </label>
+                <input type="submit" value="Versturen">
+            </form>
+
         </div>
     </main>
 </body>

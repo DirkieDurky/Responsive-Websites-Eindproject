@@ -7,7 +7,7 @@
     <title>Celeste - Story</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/pages.css">
 </head>
 
 <body>
