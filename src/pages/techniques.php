@@ -18,6 +18,8 @@
         <p><?= Lorem::paragraph() ?></p>
 
         <h2 id="dash-tech">Technieken met dash</h2>
+        <p><?= Lorem::paragraph(2, 10) ?></p>
+        <hr /><br />
         <?php
         foreach (array_filter($techniques, function ($item) {
             return $item->type == "dash-tech";
@@ -31,6 +33,8 @@
         }
         ?>
         <h2 id="dashless-tech">Technieken zonder dash</h2>
+        <p><?= Lorem::paragraph(2, 10) ?></p>
+        <hr /><br />
         <?php
         foreach (array_filter($techniques, function ($item) {
             return $item->type == "dashless-tech";

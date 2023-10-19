@@ -38,11 +38,7 @@
     margin-top: 0;
 }
 
-/* Techniques */
-h2 {
-    margin-bottom: 2rem;
-}
-
+/* Verhaal */
 .column {
     flex: 1;
     min-width: 22rem;
@@ -85,6 +81,7 @@ h2 {
     /* width: 100%; */
 }
 
+/* Techniques */
 .techniques p {
     max-width: 60rem;
 }
