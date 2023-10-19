@@ -5,3 +5,10 @@
 
     display: block;
 }
+
+.sources {
+    position: relative;
+    display: inline-block;
+    bottom: -3.5rem;
+    left: -8rem;
+}

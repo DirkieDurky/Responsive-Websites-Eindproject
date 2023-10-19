@@ -38,11 +38,6 @@
                 </div>
             </div>
         </div>
-        <span class="sources">
-            De afbeeldingen en gifs op deze website komen van <a href="https://celeste.ink/w/index.php?title=Main_Page&oldid=5600">Celeste Wiki</a><br>
-            Het Renogare font is van <a href="https://www.dafont.com/renogare.font">Dafont.com</a><br>
-            Icoontjes komen van <a href="https://fontawesome.com/icons">FontAwesome</a>
-        </span>
 
     </main>
 
