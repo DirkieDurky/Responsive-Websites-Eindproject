@@ -7,7 +7,7 @@
     text-align: center;
 }
 
-.mechanic ul {
+.mechanic .other-mechanics {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

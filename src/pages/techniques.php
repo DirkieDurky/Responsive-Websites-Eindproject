@@ -15,24 +15,16 @@
 
     <main class="techniques">
         <h1>Techniques</h1>
-        <p>
-            <?php
-            echo $lipsum->words(40);
-            ?>
+        <p><?= Lorem::paragraph() ?></p>
 
-        </p>
         <h2 id="dash-tech">Dash Tech</h2>
         <div class="column">
-            <?php
-            echo $lipsum->words(40);
-            ?>
+            <p><?= Lorem::paragraph() ?></p>
         </div>
         <h3>Superdash (Super)</h3>
         <div class="hor-flex">
             <div class="column">
-                <?php
-                echo $lipsum->paragraph();
-                ?>
+                <p><?= Lorem::paragraph() ?></p>
             </div>
             <div class="celeste-image-container">
                 <img class="celeste-image" src="../assets/techniques/super-dash.gif" alt="Super dash showcase">
@@ -41,17 +33,13 @@
         <h3>Hyperdash (Hyper)</h3>
         <div class="hor-flex">
             <div class="column">
-                <?php
-                echo $lipsum->paragraph();
-                ?>
+                <p><?= Lorem::paragraph() ?></p>
             </div>
         </div>
         <h3>Wavedash</h3>
         <div class="hor-flex">
             <div class="column">
-                <?php
-                echo $lipsum->paragraph();
-                ?>
+                <p><?= Lorem::paragraph() ?></p>
             </div>
             <div class="celeste-image-container">
                 <img class="celeste-image" src="../assets/techniques/wavedash.gif" alt="Wavedash showcase">
@@ -60,25 +48,19 @@
         <h3>Ultradash (Ultra)</h3>
         <div class="hor-flex">
             <div class="column">
-                <?php
-                echo $lipsum->paragraph();
-                ?>
+                <p><?= Lorem::paragraph() ?></p>
             </div>
         </div>
         <h3>Demodash (Demo)</h3>
         <div class="hor-flex">
             <div class="column">
-                <?php
-                echo $lipsum->paragraph();
-                ?>
+                <p><?= Lorem::paragraph() ?></p>
             </div>
         </div>
         <h3>Wallbounce (wb)</h3>
         <div class="hor-flex">
             <div class="column">
-                <?php
-                echo $lipsum->paragraph();
-                ?>
+                <p><?= Lorem::paragraph() ?></p>
             </div>
             <div class="celeste-image-container">
                 <img class="celeste-image" src="../assets/techniques/wallbouncing.gif" alt="Wallbounce showcase">
@@ -86,40 +68,30 @@
         </div>
         <h2 id="dashless-tech">Dashless Tech</h2>
         <div class="column">
-            <?php
-            echo $lipsum->words(40);
-            ?>
+            <p><?= Lorem::paragraph() ?></p>
         </div>
         <h3>Bunnyhop (Bhop)</h3>
         <div class="hor-flex">
             <div class="column">
-                <?php
-                echo $lipsum->paragraph();
-                ?>
+                <p><?= Lorem::paragraph() ?></p>
             </div>
         </div>
         <h3>Cornerkick</h3>
         <div class="hor-flex">
             <div class="column">
-                <?php
-                echo $lipsum->paragraph();
-                ?>
+                <p><?= Lorem::paragraph() ?></p>
             </div>
         </div>
         <h3>Crouch Jump / Crouch Climb</h3>
         <div class="hor-flex">
             <div class="column">
-                <?php
-                echo $lipsum->paragraph();
-                ?>
+                <p><?= Lorem::paragraph() ?></p>
             </div>
         </div>
         <h3>Neutral Jump (Neutral)</h3>
         <div class="hor-flex">
             <div class="column">
-                <?php
-                echo $lipsum->paragraph();
-                ?>
+                <p><?= Lorem::paragraph() ?></p>
             </div>
             <div class="celeste-image-container">
                 <img class="celeste-image" src="../assets/techniques/neutral-jumping.gif" alt="Neutral jump showcase">
@@ -128,25 +100,19 @@
         <h3>5 Jump</h3>
         <div class="hor-flex">
             <div class="column">
-                <?php
-                echo $lipsum->paragraph();
-                ?>
+                <p><?= Lorem::paragraph() ?></p>
             </div>
         </div>
         <h3>Cornerboost (cb)</h3>
         <div class="hor-flex">
             <div class="column">
-                <?php
-                echo $lipsum->paragraph();
-                ?>
+                <p><?= Lorem::paragraph() ?></p>
             </div>
         </div>
         <h3>Throwable Backboost (Backboost)</h3>
         <div class="hor-flex">
             <div class="column">
-                <?php
-                echo $lipsum->paragraph();
-                ?>
+                <p><?= Lorem::paragraph() ?></p>
             </div>
         </div>
     </main>
