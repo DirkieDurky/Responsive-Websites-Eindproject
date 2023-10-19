@@ -26,7 +26,7 @@
                 } ?>
                 <li class="mechanic">
                     <img class="image" src="../assets/mechanics/<?= $mechanic->asset ?>">
-                    <h2 class="name"><a href="./mechanic/<?= $mechanic->name ?>.html"><?= $mechanic->name ?></a></h2>
+                    <h2 class="name"><a href="./mechanic/<?= $mechanic->title ?>.html"><?= $mechanic->name ?></a></h2>
                     <p class="description"><?= Lorem::paragraph(3) ?></p>
                 </li>
             <?php endforeach ?>
@@ -56,7 +56,7 @@
                     } ?>
                     <li class="mechanic">
                         <img class="image" src="../assets/mechanics/<?= $mechanic->asset ?>">
-                        <h2 class="name"><a href="./mechanic/<?= $mechanic->name ?>.html"><?= $mechanic->name ?></a></h2>
+                        <h2 class="name"><a href="./mechanic/<?= $mechanic->title ?>.html"><?= $mechanic->name ?></a></h2>
                         <p class="description"><?= Lorem::paragraph(3) ?></p>
                         <?php if (count($mechanic->chapters) === 1) : ?>
                             <p class="chapters">Only found in chapter: <a href="#chapter-<?= substr($mechanic->chapters[0], 0, 1) ?>"><?= $mechanic->chapters[0] ?></a></p>

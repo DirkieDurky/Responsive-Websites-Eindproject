@@ -38,7 +38,7 @@ $path = str_repeat("../", $depth);
                                 <?php if ($headerMechanic->home != $chapter) {
                                     continue;
                                 } ?>
-                                <li class="topic"><a href="<?= $path ?>mechanics/mechanic/<?= $headerMechanic->name ?>.html"><?= $headerMechanic->name ?></a></li>
+                                <li class="topic"><a href="<?= $path ?>mechanics/mechanic/<?= $headerMechanic->title ?>.html"><?= $headerMechanic->name ?></a></li>
                             <?php endforeach ?>
                         </ul>
                     </li>
