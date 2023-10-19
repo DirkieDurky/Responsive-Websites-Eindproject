@@ -15,22 +15,26 @@
 
     <main class="contact">
         <h1>Contact</h1>
-        Heeft u een vraag, suggestie, of wilt u om een andere reden contact met ons opnemen? Dat kan via dit formulier!
-        <form class="contact-form">
-            <label>
-                Email<br>
-                <input type="text" placeholder="Email">
-            </label>
-            <label>
-                Naam<br>
-                <input type="text" placeholder="Naam">
-            </label>
-            <label>
-                Bericht<br>
-                <textarea placeholder="Bericht"></textarea>
-            </label>
-            <input type="submit" value="Versturen">
-        </form>
+        <div class="content">
+            Heeft u een vraag, suggestie, of wilt u om een andere reden contact met ons opnemen? Dat kan via dit formulier!
+            <div class="form-container">
+                <form class="contact-form">
+                    <label>
+                        Email<br>
+                        <input type="text" placeholder="Email">
+                    </label>
+                    <label>
+                        Naam<br>
+                        <input type="text" placeholder="Naam">
+                    </label>
+                    <label>
+                        Bericht<br>
+                        <textarea placeholder="Bericht"></textarea>
+                    </label>
+                    <input type="submit" value="Versturen">
+                </form>
+            </div>
+        </div>
     </main>
 </body>
 
