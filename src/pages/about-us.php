@@ -23,7 +23,7 @@
                     <div class="title"><img class="arrow-icon" src="../assets/about-us/arrow-left-solid.svg" alt="arrow-left">Over mij, Dirk Freijters</div>
                     <div class="content">
                         <?php
-                        echo $lipsum->paragraph();
+                        echo $lipsum->words(100);
                         ?>
                     </div>
                     <div class="footer"></div>
@@ -34,7 +34,7 @@
                     <div class="title">Over mij, Cas de Loijer<img class="arrow-icon" src="../assets/about-us/arrow-right-solid.svg" alt="arrow-right"></div>
                     <div class="content">
                         <?php
-                        echo $lipsum->paragraph();
+                        echo $lipsum->words(100);
                         ?>
                     </div>
                     <div class="footer"></div>
@@ -43,6 +43,13 @@
                     <img class="about-me-image" src="../assets/about-us/cas-de-loijer.jpg" alt="picture Marnix">
                 </div>
             </div>
+        </div>
+        <span class="sources">
+            De afbeeldingen en gifs op deze website komen van <a href="https://celeste.ink/w/index.php?title=Main_Page&oldid=5600">Celeste Wiki</a><br>
+            Het Renogare font is van <a href="https://www.dafont.com/renogare.font">Dafont.com</a><br>
+            Icoontjes komen van <a href="https://fontawesome.com/icons">FontAwesome</a>
+        </span>
+
     </main>
 
 </html>

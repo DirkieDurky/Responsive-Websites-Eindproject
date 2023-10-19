@@ -74,3 +74,8 @@
     width: 1em;
     margin: 0 1em;
 }
+
+.sources {
+    position: relative;
+    top: 4rem;
+}
