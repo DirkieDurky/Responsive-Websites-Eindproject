@@ -22,7 +22,15 @@
             <h2><?= $mechanic->name ?></h2>
             <img src="../../assets/mechanics/<?= $mechanic->asset ?>" alt="">
             <h3>Found in chapters</h3>
-            <p><?= implode(", ", $mechanic->chapters) ?></p>
+            <p>
+                <?php
+                foreach ($mechanic->chapters as $chapter) {
+                ?>
+                    <a href="../../mechanics#chapter-<?= substr($chapter, 0, 1) ?>"><?= $chapter ?></a>
+                <?php
+                }
+                ?>
+            </p>
         </div>
 
         <p><?= Lorem::text(2, 5, 15, "</p><p>") ?></p>

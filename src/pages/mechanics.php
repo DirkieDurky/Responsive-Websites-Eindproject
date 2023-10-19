@@ -59,9 +59,17 @@
                         <h2 class="name"><a href="./mechanic/<?= $mechanic->name ?>.html"><?= $mechanic->name ?></a></h2>
                         <p class="description"><?= Lorem::paragraph(3) ?></p>
                         <?php if (count($mechanic->chapters) === 1) : ?>
-                            <p class="chapters">Only found in chapter: <?= $mechanic->chapters[0] ?></p>
+                            <p class="chapters">Only found in chapter: <a href="#chapter-<?= substr($mechanic->chapters[0], 0, 1) ?>"><?= $mechanic->chapters[0] ?></a></p>
                         <?php else : ?>
-                            <p class="chapters">Found in chapters: <?= implode(", ", $mechanic->chapters) ?></p>
+                            <p class="chapters">Found in chapters:
+                                <?php
+                                foreach ($mechanic->chapters as $chapter) {
+                                ?>
+                                    <a href="#chapter-<?= substr($chapter, 0, 1) ?>"><?= $chapter ?></a>
+                                <?php
+                                }
+                                ?>
+                            </p>
                         <?php endif ?>
                     </li>
                 <?php endforeach ?>
