@@ -7,17 +7,17 @@
 
     font-size: larger;
 
-    backdrop-filter: blur(16px);
+    backdrop-filter: blur(8px);
     background-color: #0000007F;
     white-space: nowrap;
 
     z-index: 1;
 
-    transition: background-color 1s;
+    transition: background-color 500ms;
 }
 
 .page-header:hover {
-    background-color: #0000009F;
+    background-color: #000000DF;
 }
 
 .menu-toggle {
@@ -175,13 +175,13 @@
 
         display: flex;
 
-        background-color: #000000e0;
-        backdrop-filter: blur(16px);
+        background-color: #000000DF;
+        backdrop-filter: blur(8px);
     }
 
     .page-header .topics {
-        background-color: #000000e0;
-        backdrop-filter: blur(16px);
+        background-color: #000000DF;
+        backdrop-filter: blur(8px);
     }
 }
 
