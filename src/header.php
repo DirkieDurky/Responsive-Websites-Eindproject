@@ -68,7 +68,7 @@ $path = str_repeat("../", $depth);
                                 <?php if ($headerTechnique->type != $type) {
                                     continue;
                                 } ?>
-                                <li class="topic"><a href="<?= $path ?>techniques/technique/<?= $headerTechnique->name ?>.html"><?= $headerTechnique->name ?></a></li>
+                                <li class="topic"><a href="<?= $path ?>techniques/technique/<?= $headerTechnique->title ?>.html"><?= $headerTechnique->title ?></a></li>
                             <?php endforeach ?>
                         </ul>
                     </li>

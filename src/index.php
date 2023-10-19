@@ -53,6 +53,6 @@ foreach ($mechanics as $mechanic) {
 foreach ($techniques as $technique) {
     ob_start();
     require "pages/technique.php";
-    file_put_contents("dist/techniques/technique/{$technique->name}.html", ob_get_contents());
+    file_put_contents("dist/techniques/technique/{$technique->title}.html", ob_get_contents());
     ob_end_clean();
 }
