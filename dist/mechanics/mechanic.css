@@ -3,6 +3,10 @@
     text-align: center;
 }
 
+.mechanic .card img {
+    width: 100%;
+}
+
 @media screen and (max-width: 720px) {
     .mechanic .card {
         float: unset;
