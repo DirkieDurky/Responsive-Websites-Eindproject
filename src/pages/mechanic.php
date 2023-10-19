@@ -20,7 +20,7 @@
 
         <div class="card container">
             <h2><?= $mechanic->name ?></h2>
-            <img src="../../assets/Temp.gif" alt="">
+            <img src="../../assets/mechanics/<?= $mechanic->asset ?>" alt="">
             <h3>Found in chapters</h3>
             <p><?= implode(", ", $mechanic->chapters) ?></p>
         </div>

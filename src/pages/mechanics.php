@@ -25,7 +25,7 @@
                     continue;
                 } ?>
                 <li class="mechanic">
-                    <img class="image" src="../assets/Temp.gif">
+                    <img class="image" src="../assets/mechanics/<?= $mechanic->asset ?>">
                     <h2 class="name"><a href="./mechanic/<?= $mechanic->name ?>.html"><?= $mechanic->name ?></a></h2>
                     <p class="description"><?= Lorem::paragraph(3) ?></p>
                 </li>
@@ -55,7 +55,7 @@
                         continue;
                     } ?>
                     <li class="mechanic">
-                        <img class="image" src="../assets/Temp.gif">
+                        <img class="image" src="../assets/mechanics/<?= $mechanic->asset ?>">
                         <h2 class="name"><a href="./mechanic/<?= $mechanic->name ?>.html"><?= $mechanic->name ?></a></h2>
                         <p class="description"><?= Lorem::paragraph(3) ?></p>
                         <?php if (count($mechanic->chapters) === 1) : ?>
