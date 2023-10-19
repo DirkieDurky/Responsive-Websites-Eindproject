@@ -19,14 +19,16 @@
             Heeft u een vraag, suggestie, of wilt u om een andere reden contact met ons opnemen? Dat kan via dit formulier!
             <div class="form-container">
                 <form class="contact-form">
-                    <label>
-                        Email<br>
-                        <input type="text" placeholder="Email">
-                    </label>
-                    <label>
-                        Naam<br>
-                        <input type="text" placeholder="Naam">
-                    </label>
+                    <div class="label-container">
+                        <label>
+                            Naam<br>
+                            <input type="text" placeholder="Naam">
+                        </label>
+                        <label>
+                            Email<br>
+                            <input type="text" placeholder="Email">
+                        </label>
+                    </div>
                     <label>
                         Bericht<br>
                         <textarea placeholder="Bericht"></textarea>
