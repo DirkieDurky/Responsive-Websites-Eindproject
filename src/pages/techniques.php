@@ -23,7 +23,7 @@
             return $item->type == "dash-tech";
         }) as $technique) {
         ?>
-            <h3><a href="./technique/<?= $technique->name ?>.html"><?= $technique->name ?></a></h3>
+            <h3><a href="./technique/<?= $technique->title ?>.html"><?= $technique->name ?></a></h3>
             <p>
                 <?= Lorem::paragraph(3); ?>
             </p>
@@ -36,7 +36,7 @@
             return $item->type == "dashless-tech";
         }) as $technique) {
         ?>
-            <h3><a href="./technique/<?= $technique->name ?>.html"><?= $technique->name ?></a></h3>
+            <h3><a href="./technique/<?= $technique->title ?>.html"><?= $technique->name ?></a></h3>
             <p>
                 <?= Lorem::paragraph(3); ?>
             </p>
