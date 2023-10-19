@@ -173,12 +173,12 @@
 
         display: flex;
 
-        background-color: #0000009F;
+        background-color: #000000e0;
         backdrop-filter: blur(16px);
     }
 
     .page-header .topics {
-        background-color: #0000009F;
+        background-color: #000000e0;
         backdrop-filter: blur(16px);
     }
 }
