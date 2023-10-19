@@ -7,6 +7,7 @@ $path = str_repeat("../", $depth);
     <input class="dropdown-toggle" id="pages-toggle" type="checkbox">
     <label class="menu-toggle" for="pages-toggle"><img class="menu-icon" src="<?= $path . "assets/bars-solid.svg" ?>" alt="menu-icon"></label>
     <ul class="pages">
+        <li class="page page-title"><a href="<?= $path ?>index.html">Startpagina</a></li>
         <li class="page dropdown">
             <input class="dropdown-toggle" id="mechanics-toggle" type="checkbox">
             <label class="dropdown-label page-title" for="mechanics-toggle"><a class="dropdown-arrow" href="<?= $path ?>mechanics">Mechanics</a></label>

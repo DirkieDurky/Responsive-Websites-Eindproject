@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 
 <body>
@@ -17,9 +18,60 @@
     <?php require("src/header.php"); ?>
 
     <main class="home">
+        <h1>Over Celeste</h1>
         <?php
         echo $lipsum->paragraph();
         ?>
+        <div class="container">
+            <a class="card-a" href="mechanics">
+                <div class="card">
+                    <h1>Mechanics</h1>
+                    <?php
+                    echo $lipsum->words(50);
+                    ?>
+                </div>
+            </a>
+            <a class="card-a" href="techniques">
+                <div class="card">
+                    <h1>Technieken</h1>
+                    <?php
+                    echo $lipsum->words(50);
+                    ?>
+                </div>
+            </a>
+            <a class="card-a" href="story">
+                <div class="card">
+                    <h1>Verhaal</h1>
+                    <?php
+                    echo $lipsum->words(50);
+                    ?>
+                </div>
+            </a>
+            <a class="card-a" href="photo-gallery">
+                <div class="card">
+                    <h1>Fotogallerij</h1>
+                    <?php
+                    echo $lipsum->words(50);
+                    ?>
+                </div>
+            </a>
+            <a class="card-a" href="about-us">
+                <div class="card">
+                    <h1>Over ons</h1>
+                    <?php
+                    echo $lipsum->words(50);
+                    ?>
+                </div>
+            </a>
+            <a class="card-a" href="contact">
+                <div class="card">
+                    <h1>Contact</h1>
+                    <?php
+                    echo $lipsum->words(50);
+                    ?>
+                </div>
+            </a>
+        </div>
     </main>
 </body>
 
