@@ -9,6 +9,10 @@ html {
 
 body {
     margin: 0;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
 
     background: linear-gradient(#000000BF, #000000BF), url("../assets/overlay.png"), #198FF4;
 
@@ -32,6 +36,7 @@ body {
 /* Reset CSS */
 main {
     padding: 1rem 10rem 5rem;
+    flex: 1;
 }
 
 @media screen and (max-width: 1024px) {

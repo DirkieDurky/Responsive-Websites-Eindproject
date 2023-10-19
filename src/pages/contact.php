@@ -17,14 +17,14 @@
         <h1>Contact</h1>
         <div class="content">
             Heb je een vraag, suggestie, of wil je om een andere reden contact met ons opnemen? Dat kan via dit formulier!
-            <form class="contact-form">
+            <form class="contact-form container">
                 <div class="label-container">
                     <label>
-                        Naam<br>
+                        Naam<br />
                         <input type="text" placeholder="Naam">
                     </label>
                     <label>
-                        Email<br>
+                        Email<br />
                         <input type="text" placeholder="Email">
                     </label>
                 </div>
@@ -34,7 +34,6 @@
                 </label>
                 <input type="submit" value="Versturen">
             </form>
-
         </div>
     </main>
 </body>
