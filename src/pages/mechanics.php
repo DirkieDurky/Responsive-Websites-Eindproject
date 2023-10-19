@@ -19,6 +19,8 @@
         <p><?= Lorem::paragraph() ?></p>
 
         <h2 class="chapter" id="chapter-all">Alle hoofdstukken</h2>
+        <p><?= Lorem::paragraph(2, 10) ?></p>
+        <hr /><br />
         <ul class="mechanics grid">
             <?php foreach ($mechanics as $mechanic) : ?>
                 <?php if ($mechanic->home !== "all") {
@@ -26,7 +28,7 @@
                 } ?>
                 <li class="mechanic">
                     <img class="image" src="../assets/mechanics/<?= $mechanic->asset ?>">
-                    <h2 class="name"><a href="./mechanic/<?= $mechanic->name ?>.html"><?= $mechanic->name ?></a></h2>
+                    <h3 class="name"><a href="./mechanic/<?= $mechanic->name ?>.html"><?= $mechanic->name ?></a></h3>
                     <p class="description"><?= Lorem::paragraph(3) ?></p>
                 </li>
             <?php endforeach ?>
@@ -49,6 +51,8 @@
         ?>
         <?php foreach ($sections as $section => $sectionName) : ?>
             <h2 class="chapter" id="chapter-<?= $section ?>"><?= $sectionName ?></h2>
+            <p><?= Lorem::paragraph(2, 10) ?></p>
+            <hr /><br />
             <ul class="mechanics grid">
                 <?php foreach ($mechanics as $mechanic) : ?>
                     <?php if ($mechanic->home != $section) {
@@ -56,7 +60,7 @@
                     } ?>
                     <li class="mechanic">
                         <img class="image" src="../assets/mechanics/<?= $mechanic->asset ?>">
-                        <h2 class="name"><a href="./mechanic/<?= $mechanic->name ?>.html"><?= $mechanic->name ?></a></h2>
+                        <h3 class="name"><a href="./mechanic/<?= $mechanic->name ?>.html"><?= $mechanic->name ?></a></h3>
                         <p class="description"><?= Lorem::paragraph(3) ?></p>
                         <?php if (count($mechanic->chapters) === 1) : ?>
                             <p class="chapters">Only found in chapter: <a href="#chapter-<?= substr($mechanic->chapters[0], 0, 1) ?>"><?= $mechanic->chapters[0] ?></a></p>
