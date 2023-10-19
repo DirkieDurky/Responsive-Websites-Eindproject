@@ -64,7 +64,7 @@
                     <?php if ($mechanic === $mechanic2) {
                         continue;
                     } ?>
-                    <li><a href="./<?= $mechanic2->name ?>.html"><?= $mechanic2->name ?></a></li>
+                    <li><a href="./<?= $mechanic2->title ?>.html"><?= $mechanic2->name ?></a></li>
                 <?php endforeach ?>
             </ul>
         </div>
