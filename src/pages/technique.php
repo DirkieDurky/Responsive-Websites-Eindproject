@@ -50,7 +50,7 @@
 
 
         <div class="container">
-            <h2>Andere techniques</h2>
+            <h2>Andere technieken</h2>
             <ul class="related">
                 <?php foreach ($techniques as $technique2) : ?>
                     <?php if ($technique === $technique2) {

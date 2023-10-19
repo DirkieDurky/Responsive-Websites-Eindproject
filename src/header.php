@@ -48,13 +48,13 @@ $path = str_repeat("../", $depth);
 
         <li class="page dropdown">
             <input class="dropdown-toggle" id="techniques-toggle" type="checkbox">
-            <label class="dropdown-label page-title" for="techniques-toggle"><a class="dropdown-arrow" href="<?= $path ?>techniques/index.html">Techniques</a></label>
+            <label class="dropdown-label page-title" for="techniques-toggle"><a class="dropdown-arrow" href="<?= $path ?>techniques/index.html">Technieken</a></label>
             <ul class="sections">
                 <?php
 
                 $types = [
-                    "dash-tech" => "Dash Tech",
-                    "dashless-tech" => "Dashless Tech",
+                    "dash-tech" => "Met Dash",
+                    "dashless-tech" => "Zonder Dash",
                 ];
 
                 ?>
