@@ -33,17 +33,22 @@ h2 {
     box-shadow: 0 0 10px black;
     transform: rotate(5deg);
     animation: slide-in-foreground 1s ease-out;
+    box-sizing: border-box;
 }
 
 .celeste-image-container::before {
     content: '';
     position: absolute;
     inset: 0;
-    padding: 1rem;
+    /* padding: 1rem; */
     background-color: white;
     transform: rotate(2deg);
-    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     animation: slide-in-background 1s ease-out;
+    box-sizing: border-box;
 }
 
 @keyframes slide-in-background {
