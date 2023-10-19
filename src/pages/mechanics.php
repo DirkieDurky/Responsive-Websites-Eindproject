@@ -16,11 +16,7 @@
 
     <main>
         <h1>Mechanics</h1>
-        <p>
-            <?php
-            echo $lipsum->paragraph();
-            ?>
-        </p>
+        <p><?= Lorem::paragraph() ?></p>
 
         <h2 class="chapter" id="chapter-all">Alle hoofdstukken</h2>
         <ul class="mechanics">
@@ -31,11 +27,7 @@
                 <li class="mechanic">
                     <img class="image" src="../assets/Temp.gif">
                     <h2 class="name"><a href="./mechanic/<?= $mechanic->name ?>.html"><?= $mechanic->name ?></a></h2>
-                    <p class="description">
-                        <?php
-                        echo $lipsum->paragraph();
-                        ?>
-                    </p>
+                    <p class="description"><?= Lorem::paragraph(3) ?></p>
                 </li>
             <?php endforeach ?>
         </ul>
@@ -65,11 +57,7 @@
                     <li class="mechanic">
                         <img class="image" src="../assets/Temp.gif">
                         <h2 class="name"><a href="./mechanic/<?= $mechanic->name ?>.html"><?= $mechanic->name ?></a></h2>
-                        <p class="description">
-                            <?php
-                            echo $lipsum->paragraph();
-                            ?>
-                        </p>
+                        <p class="description"><?= Lorem::paragraph(3) ?></p>
                         <?php if (count($mechanic->chapters) === 1) : ?>
                             <p class="chapters">Only found in chapter: <?= $mechanic->chapters[0] ?></p>
                         <?php else : ?>

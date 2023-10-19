@@ -1,7 +1,6 @@
 <?php
 require_once "classes/mechanic.php";
-require_once "classes/LoremIpsum.php";
-$lipsum = new joshtronic\LoremIpsum();
+require_once "classes/Lorem.php";
 
 $depth = 0;
 

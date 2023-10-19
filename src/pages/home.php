@@ -19,56 +19,42 @@
 
     <main class="home">
         <h1>Over Celeste</h1>
-        <?php
-        echo $lipsum->paragraph();
-        ?>
+        <p><?= Lorem::paragraph() ?></p>
         <div class="container">
             <a class="card-a" href="mechanics">
                 <div class="card">
                     <h1>Mechanics</h1>
-                    <?php
-                    echo $lipsum->words(50);
-                    ?>
+                    <p><?= Lorem::text(2, 3, 15, "</p><p>") ?></p>
                 </div>
             </a>
             <a class="card-a" href="techniques">
                 <div class="card">
                     <h1>Technieken</h1>
-                    <?php
-                    echo $lipsum->words(50);
-                    ?>
+                    <p><?= Lorem::text(2, 3, 15, "</p><p>") ?></p>
                 </div>
             </a>
             <a class="card-a" href="story">
                 <div class="card">
                     <h1>Verhaal</h1>
-                    <?php
-                    echo $lipsum->words(50);
-                    ?>
+                    <p><?= Lorem::text(2, 3, 15, "</p><p>") ?></p>
                 </div>
             </a>
             <a class="card-a" href="photo-gallery">
                 <div class="card">
                     <h1>Fotogallerij</h1>
-                    <?php
-                    echo $lipsum->words(50);
-                    ?>
+                    <p><?= Lorem::text(2, 3, 15, "</p><p>") ?></p>
                 </div>
             </a>
             <a class="card-a" href="about-us">
                 <div class="card">
                     <h1>Over ons</h1>
-                    <?php
-                    echo $lipsum->words(50);
-                    ?>
+                    <p><?= Lorem::text(2, 3, 15, "</p><p>") ?></p>
                 </div>
             </a>
             <a class="card-a" href="contact">
                 <div class="card">
                     <h1>Contact</h1>
-                    <?php
-                    echo $lipsum->words(50);
-                    ?>
+                    <p><?= Lorem::text(2, 3, 15, "</p><p>") ?></p>
                 </div>
             </a>
         </div>

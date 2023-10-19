@@ -25,38 +25,32 @@
             <p><?= implode(", ", $mechanic->chapters) ?></p>
         </div>
 
-        <p>
-            <?php
-            echo $lipsum->paragraph();
-            ?>
-        </p>
+        <p><?= Lorem::text(2, 5, 15, "</p><p>") ?></p>
+
+        <h2>Opmerkingen</h2>
+        <hr />
+        <ul>
+            <li><?= Lorem::text(3, 2, 10, "</li><li>") ?></li>
+        </ul>
 
         <h2>Tips</h2>
         <hr />
-        <p>
-            <?php
-            echo $lipsum->paragraph();
-            ?>
-        </p>
-
-        <h2>Notes</h2>
-        <hr />
-        <p>
-            <?php
-            echo $lipsum->paragraph();
-            ?>
-        </p>
-
-        <h2>History</h2>
-        <hr>
-        <p>
-            <?php
-            echo $lipsum->paragraph();
-            ?>
-        </p>
-
-        <h2>Other mechanics</h2>
         <ul>
+            <li><?= Lorem::text(3, 2, 10, "</li><li>") ?></li>
+        </ul>
+
+        <h2>Weetjes</h2>
+        <hr />
+        <ul>
+            <li><?= Lorem::text(3, 2, 10, "</li><li>") ?></li>
+        </ul>
+
+        <h2>Geschiedenis</h2>
+        <hr>
+        <p><?= Lorem::text(3, 1, 5, "</p><p>") ?></p>
+
+        <h2>Andere mechanics</h2>
+        <ul class="other-mechanics">
             <?php foreach ($mechanics as $mechanic2) : ?>
                 <?php if ($mechanic === $mechanic2) {
                     continue;

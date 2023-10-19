@@ -22,9 +22,7 @@
                 <div class="about-me left">
                     <div class="title"><img class="arrow-icon" src="../assets/about-us/arrow-left-solid.svg" alt="arrow-left">Over mij, Dirk Freijters</div>
                     <div class="content">
-                        <?php
-                        echo $lipsum->words(100);
-                        ?>
+                        <p><?= Lorem::paragraph() ?></p>
                     </div>
                     <div class="footer"></div>
                 </div>
@@ -33,9 +31,7 @@
                 <div class="about-me right">
                     <div class="title">Over mij, Cas de Loijer<img class="arrow-icon" src="../assets/about-us/arrow-right-solid.svg" alt="arrow-right"></div>
                     <div class="content">
-                        <?php
-                        echo $lipsum->words(100);
-                        ?>
+                        <p><?= Lorem::paragraph() ?></p>
                     </div>
                     <div class="footer"></div>
                 </div>

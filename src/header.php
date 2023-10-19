@@ -28,7 +28,7 @@ $path = str_repeat("../", $depth);
                 ];
 
                 ?>
-                <li class="section"><a href=" <?= $path ?>mechanics">Naar pagina</a></li>
+                <li class="section"><a href="<?= $path ?>mechanics">Naar pagina</a></li>
                 <?php foreach ($chapters as $chapter => $chapterName) : ?>
                     <li class="section dropdown">
                         <a class="dropdown-arrow" href="<?= $path ?>mechanics#chapter-<?= $chapter ?>"><?= $chapterName ?></a>
