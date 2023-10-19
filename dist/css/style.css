@@ -10,7 +10,7 @@ html {
 body {
     margin: 0;
 
-    background: linear-gradient(#000000BF, #000000BF), url("../assets/overlay.png");
+    background: linear-gradient(#000000BF, #000000BF), url("../assets/overlay.png"), #198FF4;
 
     background-repeat: repeat;
     animation: gradient 50s linear infinite;
