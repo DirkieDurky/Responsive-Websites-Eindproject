@@ -206,10 +206,6 @@
 }
 
 @media screen and (hover: none) {
-    .page-header .dropdown-toggle:checked~.sections {
-        display: flex;
-    }
-
     .page-header .dropdown-arrow {
         pointer-events: none;
     }
@@ -217,6 +213,5 @@
 
 .menu-icon {
     width: 1em;
-    filter: invert();
     cursor: pointer;
 }
