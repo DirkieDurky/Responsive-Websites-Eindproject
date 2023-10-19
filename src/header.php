@@ -70,11 +70,11 @@ $path = str_repeat("../", $depth);
                     "9" => "Hoofdstuk 9 - Farewell",
                 ];
                 ?>
-                <li class="section"><a href="story">Naar hoofdstuk</a></li>
+                <li class="section"><a href="<?= $path ?>story">Naar pagina</a></li>
                 <?php
                 foreach ($chapters as $chapter => $chapterName) {
                 ?>
-                    <li class="section"><a href="story#chapter-<?= $chapter ?>"><?= $chapterName ?></a></li>
+                    <li class="section"><a href="<?= $path ?>story#chapter-<?= $chapter ?>"><?= $chapterName ?></a></li>
                 <?php
                 }
                 ?>
