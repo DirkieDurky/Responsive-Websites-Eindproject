@@ -18,7 +18,7 @@
         <hr />
         <p><?= Lorem::paragraph() ?></p>
 
-        <h2 id="dash-tech">Technieken met dash</h2>
+        <h2 id="dash-tech"><a href="#dash-tech" class="fragment">Technieken met dash</a></h2>
         <p><?= Lorem::paragraph(2, 10) ?></p>
         <hr /><br />
         <?php
@@ -33,7 +33,7 @@
         <?php
         }
         ?>
-        <h2 id="dashless-tech">Technieken zonder dash</h2>
+        <h2 id="dashless-tech"><a href="#dashless-tech" class="fragment">Technieken zonder dash</a></h2>
         <p><?= Lorem::paragraph(2, 10) ?></p>
         <hr /><br />
         <?php

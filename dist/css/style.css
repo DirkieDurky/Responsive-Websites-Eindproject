@@ -1,3 +1,31 @@
+.fragment {
+    position: relative;
+}
+
+.fragment,
+.fragment:visited {
+    color: white;
+}
+
+.fragment::before {
+    content: "#";
+    position: absolute;
+
+    top: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+
+    will-change: transform;
+    transition: transform .5s ease-in, opacity .5s ease-in;
+    font-size: 1.5rem;
+}
+
+.fragment:hover::before {
+    transform: translate(-100%, -50%);
+    opacity: 1;
+    transition-timing-function: ease-out;
+}
+
 @font-face {
     font-family: "renogare";
     src: url("../assets/renogare.otf")

@@ -17,7 +17,7 @@
         <h1>Story</h1>
         <hr />
         <p><?= Lorem::paragraph() ?></p>
-        <h2 id="chapter-1">Hoofdstuk 1 - Forsaken City</h2>
+        <h2 id="chapter-1"><a href="#chapter-1" class="fragment">Hoofdstuk 1 - Forsaken City</a></h2>
         <hr />
         <div class="hor-flex">
             <div class="celeste-image-container">
@@ -34,7 +34,7 @@
                 <p><?= Lorem::paragraph() ?></p>
             </div>
         </div>
-        <h2 id="chapter-2">Hoofdstuk 2 - Old Site</h2>
+        <h2 id="chapter-2"><a href="#chapter-2" class="fragment">Hoofdstuk 2 - Old Site</a></h2>
         <hr />
         <div class="hor-flex">
             <div class="column">
@@ -44,7 +44,7 @@
                 <img class="celeste-image" src="../assets/celeste-complete-screens/complete-2.png" alt="Chapter 1">
             </div>
         </div>
-        <h2 id="chapter-3">Hoofdstuk 3 - Celestial Resort</h2>
+        <h2 id="chapter-3"><a href="#chapter-3" class="fragment">Hoofdstuk 3 - Celestial Resort</a></h2>
         <div class="hor-flex">
             <div class="celeste-image-container">
                 <img class="celeste-image" src="../assets/celeste-complete-screens/complete-3.png" alt="Chapter 1">
@@ -53,7 +53,7 @@
                 <p><?= Lorem::paragraph() ?></p>
             </div>
         </div>
-        <h2 id="chapter-4">Hoofdstuk 4 - Golden Ridge</h2>
+        <h2 id="chapter-4"><a href="#chapter-4" class="fragment">Hoofdstuk 4 - Golden Ridge</a></h2>
         <hr />
         <div class="hor-flex">
             <div class="column">
@@ -63,7 +63,7 @@
                 <img class="celeste-image" src="../assets/celeste-complete-screens/complete-4.png" alt="Chapter 1">
             </div>
         </div>
-        <h2 id="chapter-5">Hoofdstuk 5 - Mirror Temple</h2>
+        <h2 id="chapter-5"><a href="#chapter-5" class="fragment">Hoofdstuk 5 - Mirror Temple</a></h2>
         <hr />
         <div class="hor-flex">
             <div class="celeste-image-container">
@@ -73,7 +73,7 @@
                 <p><?= Lorem::paragraph() ?></p>
             </div>
         </div>
-        <h2 id="chapter-6">Hoofdstuk 6 - Reflection</h2>
+        <h2 id="chapter-6"><a href="#chapter-6" class="fragment">Hoofdstuk 6 - Reflection</a></h2>
         <hr />
         <div class="hor-flex">
             <div class="column">
@@ -83,7 +83,7 @@
                 <img class="celeste-image" src="../assets/celeste-complete-screens/complete-6.png" alt="Chapter 1">
             </div>
         </div>
-        <h2 id="chapter-7">Hoofdstuk 7 - Summit</h2>
+        <h2 id="chapter-7"><a href="#chapter-7" class="fragment">Hoofdstuk 7 - Summit</a></h2>
         <hr />
         <div class="hor-flex">
             <div class="celeste-image-container">
@@ -93,7 +93,7 @@
                 <p><?= Lorem::paragraph() ?></p>
             </div>
         </div>
-        <h2 id="chapter-8">Hoofdstuk 8 - Core</h2>
+        <h2 id="chapter-8"><a href="#chapter-8" class="fragment">Hoofdstuk 8 - Core</a></h2>
         <hr />
         <div class="hor-flex">
             <div class="column">
@@ -103,7 +103,7 @@
                 <img class="celeste-image" src="../assets/celeste-complete-screens/complete-8.png" alt="Chapter 1">
             </div>
         </div>
-        <h2 id="chapter-9">Hoofdstuk 9 - Farewell</h2>
+        <h2 id="chapter-9"><a href="#chapter-9" class="fragment">Hoofdstuk 9 - Farewell</a></h2>
         <hr />
         <div class="hor-flex">
             <div class="celeste-image-container">
