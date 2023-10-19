@@ -17,33 +17,9 @@
     <?php require("src/header.php"); ?>
 
     <main class="home">
-        <h1>Celeste</h1>
-        <h1>Celeste</h1>
-        <h1>Celeste</h1>
-        <h1>Celeste</h1>
-        <h1>Celeste</h1>
-        <h1>Celeste</h1>
-        <h1>Celeste</h1>
-        <h1>Celeste</h1>
-        <h1>Celeste</h1>
-        <h1>Celeste</h1>
-        <h1>Celeste</h1>
-        <h1>Celeste</h1>
-        <h1>Celeste</h1>
-        <h1>Celeste</h1>
-        <h1>Celeste</h1>
-        <h1>Celeste</h1>
-        <h1>Celeste</h1>
-        <h1>Celeste</h1>
-        <h1>Celeste</h1>
-        <h1>Celeste</h1>
-        <h1>Celeste</h1>
-        <h1>Celeste</h1>
-        <h1>Celeste</h1>
-        <h1>Celeste</h1>
-        <h1>Celeste</h1>
-        <h1>Celeste</h1>
-        <h1>Celeste</h1>
+        <?php
+        echo $lipsum->paragraph();
+        ?>
     </main>
 </body>
 

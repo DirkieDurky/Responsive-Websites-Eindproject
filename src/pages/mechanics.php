@@ -16,7 +16,11 @@
 
     <main>
         <h1>Mechanics</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, quis animi deleniti adipisci corrupti sapiente quasi tempora incidunt nihil similique eaque omnis inventore, ad vitae? Quasi sit alias animi porro nesciunt ducimus distinctio excepturi quod eius consectetur consequuntur, facere quas dolorum nisi esse beatae, accusantium debitis vel modi. Delectus aperiam, eaque ea veniam quaerat adipisci natus recusandae dolore. Dolorum nam corporis voluptatum alias consequatur, corrupti, deleniti at laborum expedita mollitia dolorem dicta temporibus cupiditate quisquam, nulla dignissimos. Autem rem doloribus quaerat ullam non deleniti officiis doloremque sunt. Exercitationem animi perspiciatis nesciunt ipsam minus eaque aperiam, placeat adipisci, nulla amet ut.</p>
+        <p>
+            <?php
+            echo $lipsum->paragraph();
+            ?>
+        </p>
 
         <h2 class="chapter" id="chapter-all">All chapters</h2>
         <ul class="mechanics">
@@ -27,7 +31,11 @@
                 <li class="mechanic">
                     <img class="image" src="../assets/Temp.gif">
                     <h2 class="name"><a href="./mechanic/<?= $mechanic->name ?>.html"><?= $mechanic->name ?></a></h2>
-                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. At dolor ullam tempore consequuntur repudiandae nemo atque dicta tenetur perferendis optio consequatur natus earum impedit aliquid dolore ab, odio maiores reprehenderit.</p>
+                    <p class="description">
+                        <?php
+                        echo $lipsum->paragraph();
+                        ?>
+                    </p>
                 </li>
             <?php endforeach ?>
         </ul>
@@ -57,7 +65,11 @@
                     <li class="mechanic">
                         <img class="image" src="../assets/Temp.gif">
                         <h2 class="name"><a href="./mechanic/<?= $mechanic->name ?>.html"><?= $mechanic->name ?></a></h2>
-                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. At dolor ullam tempore consequuntur repudiandae nemo atque dicta tenetur perferendis optio consequatur natus earum impedit aliquid dolore ab, odio maiores reprehenderit.</p>
+                        <p class="description">
+                            <?php
+                            echo $lipsum->paragraph();
+                            ?>
+                        </p>
                         <?php if (count($mechanic->chapters) === 1) : ?>
                             <p class="chapters">Only found in chapter: <?= $mechanic->chapters[0] ?></p>
                         <?php else : ?>
