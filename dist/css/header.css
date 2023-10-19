@@ -55,7 +55,9 @@
 }
 
 .page-header .dropdown-arrow::after {
-    content: ">";
+    content: url(../assets/dropdown.svg);
+    width: 1rem;
+    height: 1.2rem;
     display: inline-block;
 
     color: white;
