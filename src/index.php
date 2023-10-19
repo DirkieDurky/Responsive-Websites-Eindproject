@@ -22,8 +22,8 @@ file_put_contents("dist/contact/index.html", ob_get_contents());
 ob_end_clean();
 
 ob_start();
-require "pages/over-ons.php";
-file_put_contents("dist/over-ons/index.html", ob_get_contents());
+require "pages/about-us.php";
+file_put_contents("dist/about-us/index.html", ob_get_contents());
 ob_end_clean();
 
 ob_start();

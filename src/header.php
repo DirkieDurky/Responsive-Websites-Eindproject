@@ -69,7 +69,7 @@ $path = str_repeat("../", $depth);
             </ul>
         </li>
         <li class="page page-title"><a href="<?= $path ?>photo-gallery">Fotogallerij</a></li>
-        <li class="page page-title"><a href="<?= $path ?>over-ons">Over ons</a></li>
+        <li class="page page-title"><a href="<?= $path ?>about-us">Over ons</a></li>
         <li class="page page-title"><a href="<?= $path ?>contact">Contact</a></li>
     </ul>
 </nav>

@@ -1,4 +1,4 @@
-.over-ons .container {
+.about-us .container {
     display: flex;
     column-gap: 1rem;
     row-gap: 1rem;
@@ -6,7 +6,7 @@
     padding: 1rem;
 }
 
-.over-ons .section {
+.about-us .section {
     display: flex;
     width: 0;
     flex: 1 1 0;
@@ -15,7 +15,7 @@
     flex-wrap: wrap;
 }
 
-.over-ons .about-me {
+.about-us .about-me {
     position: relative;
     flex: 1 1 0;
     background-color: white;
@@ -28,7 +28,7 @@
     color: black;
 }
 
-.over-ons .about-me .content {
+.about-us .about-me .content {
     position: relative;
     padding: 1rem;
     margin-bottom: 3rem;
@@ -55,7 +55,7 @@
     background-color: #ddd;
 }
 
-.over-ons .footer {
+.about-us .footer {
     position: absolute;
     bottom: 0;
     width: 100%;
