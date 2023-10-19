@@ -19,6 +19,7 @@
 
     <main class="home">
         <h1>Over deze website</h1>
+        <hr />
         <p>
             Hoi, Hallo, je bevindt je nu op onze inzending van het eindproject van <u title="ATD Responsive Websites (HTML/CSS) 2023-24 P1">ATD Responsive websites</u>.<br />
             Dit kan betekenen dat je hier bent omdat je dit project moet beoordelen, of misschien ben je hier op een andere manier terecht gekomen, in ieder geval welkom!<br />
