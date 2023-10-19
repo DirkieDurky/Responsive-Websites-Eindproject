@@ -16,7 +16,7 @@
     <main class="contact">
         <h1>Contact</h1>
         <div class="content">
-            Heeft u een vraag, suggestie, of wilt u om een andere reden contact met ons opnemen? Dat kan via dit formulier!
+            Heb je een vraag, suggestie, of wil je om een andere reden contact met ons opnemen? Dat kan via dit formulier!
             <div class="form-container">
                 <form class="contact-form">
                     <div class="label-container">

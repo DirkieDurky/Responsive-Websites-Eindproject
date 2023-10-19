@@ -18,17 +18,17 @@
     <?php require("src/header.php"); ?>
 
     <main class="home">
-        <h1>Over Celeste</h1>
+        <h1>Over deze website</h1>
         <p>
             Hoi, Hallo, je bevindt je nu op onze inzending van het eindproject van <u title="ATD Responsive Websites (HTML/CSS) 2023-24 P1">ATD Responsive websites</u>.<br />
             Dit kan betekenen dat je hier bent omdat je dit project moet beoordelen, of misschien ben je hier op een andere manier terecht gekomen, in ieder geval welkom!<br />
             Het doel van dit project was om een website te maken met een coole layout die op alle platformen werkt.<br />
-            We gebruik gemaakt van "lorem ipsum" dat is meningloze tekst die er in dit geval voor zorgt dat je niet afgeleidt raakt door de tekst.
+            We hebben gebruik gemaakt van "lorem ipsum". Dat is meningloze tekst die er in dit geval voor zorgt dat je niet wordt afgeleid door de tekst.
         </p>
         <p>
             Nou zit je mischien te denken: "Wat een grote site, waar moet ik nu beginnen?". Geen zorgen!<br />
             Hieronder hebben we al een aantal interesante pagina's staan die je naar de belangerijkste punten van de site brengen.<br />
-            Binnen een aantal van deze pagina's kan je zelfs nog navigeren naar nog meer pagina's, natuurlijk kan je ook altijd nog gebruik maken van het navigatiemenu.
+            Binnen een aantal van deze pagina's kan je zelfs nog navigeren naar nog meer pagina's, natuurlijk kan je ook altijd nog gebruik maken van het navigatiemenu hierboven.
         </p>
         <p>
             Deze site heeft de stijl van een wiki voor de game <a href="https://www.celestegame.com/">Celeste</a>, het is zeker een aanrader. Veel plezier!
