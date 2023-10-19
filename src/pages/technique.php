@@ -7,25 +7,58 @@
     <title>Celeste - <?= $technique->name ?></title>
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/header.css">
-    <link rel="stylesheet" href="../technique.css">
+    <link rel="stylesheet" href="../../css/info.css">
 </head>
 
 <body>
     <?php require("src/header.php"); ?>
 
-    <main class="technique">
+    <main class="info">
         <h1><?= $technique->name ?></h1>
-        <?php
-        if ($technique->gifPath != null) {
-        ?>
+        <hr />
+
+        <?php if ($technique->gifPath != null) : ?>
             <div class="card container">
                 <h2><?= $technique->name ?></h2>
                 <img src="<?= $technique->gifPath ?>" alt="">
             </div>
+        <?php endif ?>
 
-        <?php
-        };
-        ?>
-        <p class="description"><?= Lorem::paragraph(9) ?></p>
+        <p><?= Lorem::text(2, 5, 15, "</p><p>") ?></p>
+
+        <h2>Opmerkingen</h2>
+        <hr />
+        <ul>
+            <li><?= Lorem::text(3, 2, 10, "</li><li>") ?></li>
+        </ul>
+
+        <h2>Tips</h2>
+        <hr />
+        <ul>
+            <li><?= Lorem::text(3, 2, 10, "</li><li>") ?></li>
+        </ul>
+
+        <h2>Weetjes</h2>
+        <hr />
+        <ul>
+            <li><?= Lorem::text(3, 2, 10, "</li><li>") ?></li>
+        </ul>
+
+        <h2>Geschiedenis</h2>
+        <hr />
+        <p><?= Lorem::text(3, 1, 5, "</p><p>") ?></p>
+
+
+        <div class="container">
+            <h2>Andere techniques</h2>
+            <ul class="related">
+                <?php foreach ($techniques as $technique2) : ?>
+                    <?php if ($technique === $technique2) {
+                        continue;
+                    } ?>
+                    <li><a href="./<?= $technique2->title ?>.html"><?= $technique2->title ?></a></li>
+                <?php endforeach ?>
+            </ul>
+        </div>
     </main>
 </body>

@@ -8,13 +8,13 @@
 
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/header.css">
-    <link rel="stylesheet" href="../mechanic.css">
+    <link rel="stylesheet" href="../../css/info.css">
 </head>
 
 <body>
     <?php require("src/header.php"); ?>
 
-    <main class="mechanic">
+    <main class="info">
         <h1><?= $mechanic->name ?></h1>
         <hr />
 
@@ -46,12 +46,12 @@
         </ul>
 
         <h2>Geschiedenis</h2>
-        <hr>
+        <hr />
         <p><?= Lorem::text(3, 1, 5, "</p><p>") ?></p>
 
         <div class="container">
             <h2>Andere mechanics</h2>
-            <ul class="other-mechanics">
+            <ul class="related">
                 <?php foreach ($mechanics as $mechanic2) : ?>
                     <?php if ($mechanic === $mechanic2) {
                         continue;

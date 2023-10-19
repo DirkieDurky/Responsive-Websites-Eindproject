@@ -97,6 +97,10 @@ a:visited {
     color: #F5A9B8;
 }
 
+hr {
+    border: 1px solid white;
+}
+
 .container {
     margin: 1rem;
     padding: 1rem;
