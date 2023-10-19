@@ -18,7 +18,7 @@
         <h1><?= $mechanic->name ?></h1>
         <hr />
 
-        <div class="card">
+        <div class="card container">
             <h2><?= $mechanic->name ?></h2>
             <img src="../../assets/Temp.gif" alt="">
             <h3>Found in chapters</h3>
@@ -49,15 +49,17 @@
         <hr>
         <p><?= Lorem::text(3, 1, 5, "</p><p>") ?></p>
 
-        <h2>Andere mechanics</h2>
-        <ul class="other-mechanics">
-            <?php foreach ($mechanics as $mechanic2) : ?>
-                <?php if ($mechanic === $mechanic2) {
-                    continue;
-                } ?>
-                <li><a href="./<?= $mechanic2->name ?>.html"><?= $mechanic2->name ?></a></li>
-            <?php endforeach ?>
-        </ul>
+        <div class="container">
+            <h2>Andere mechanics</h2>
+            <ul class="other-mechanics">
+                <?php foreach ($mechanics as $mechanic2) : ?>
+                    <?php if ($mechanic === $mechanic2) {
+                        continue;
+                    } ?>
+                    <li><a href="./<?= $mechanic2->name ?>.html"><?= $mechanic2->name ?></a></li>
+                <?php endforeach ?>
+            </ul>
+        </div>
     </main>
 </body>
 

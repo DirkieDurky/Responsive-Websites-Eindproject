@@ -31,7 +31,19 @@ body {
 
 /* Reset CSS */
 main {
-    padding: 1rem 1rem 5rem 1rem;
+    padding: 1rem 10rem 5rem;
+}
+
+@media screen and (max-width: 1024px) {
+    main {
+        padding: 1rem 5rem 5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    main {
+        padding: 1rem 1rem 5rem;
+    }
 }
 
 h1 {
@@ -78,8 +90,37 @@ p {
 
 a {
     color: #5BCEFA;
+    text-decoration: none;
 }
 
 a:visited {
     color: #F5A9B8;
+}
+
+.container {
+    margin: 1rem;
+    padding: 1rem;
+
+    background-color: #0000007F;
+    backdrop-filter: blur(16px);
+}
+
+.container :first-child {
+    margin-top: 0;
+}
+
+.container :last-child {
+    margin-bottom: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    gap: 2rem;
+}
+
+.flex-wrap {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
 }

@@ -19,7 +19,7 @@
         <p><?= Lorem::paragraph() ?></p>
 
         <h2 class="chapter" id="chapter-all">Alle hoofdstukken</h2>
-        <ul class="mechanics">
+        <ul class="mechanics grid">
             <?php foreach ($mechanics as $mechanic) : ?>
                 <?php if ($mechanic->home !== "all") {
                     continue;
@@ -49,7 +49,7 @@
         ?>
         <?php foreach ($sections as $section => $sectionName) : ?>
             <h2 class="chapter" id="chapter-<?= $section ?>"><?= $sectionName ?></h2>
-            <ul class="mechanics">
+            <ul class="mechanics grid">
                 <?php foreach ($mechanics as $mechanic) : ?>
                     <?php if ($mechanic->home != $section) {
                         continue;
