@@ -20,6 +20,11 @@
     background-color: #000000DF;
 }
 
+.page-header a {
+    display: inline-block;
+    width: 100%;
+}
+
 .menu-toggle {
     display: none;
 }
@@ -47,7 +52,6 @@
     position: relative;
     width: min-content;
 }
-
 
 .page-header .page-title>a {
     display: inline-block;

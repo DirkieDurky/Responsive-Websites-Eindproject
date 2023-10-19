@@ -15,16 +15,16 @@ $path = str_repeat("../", $depth);
                 <?php
 
                 $chapters = [
-                    "all" => "Alle hoofdstukken",
-                    "1" => "Hoofdstuk 1 - Forsaken City",
-                    "2" => "Hoofdstuk 2 - Old Site",
-                    "3" => "Hoofdstuk 3 - Celestial Resort",
-                    "4" => "Hoofdstuk 4 - Golden Ridge",
-                    "5" => "Hoofdstuk 5 - Mirror Temple",
-                    "6" => "Hoofdstuk 6 - Reflection",
-                    "7" => "Hoofdstuk 7 - Summit",
-                    "8" => "Hoofdstuk 8 - Core",
-                    "9" => "Hoofdstuk 9 - Farewell",
+                    "all" => "Globaal",
+                    "1" => "Forsaken City",
+                    "2" => "Old Site",
+                    "3" => "Celestial Resort",
+                    "4" => "Golden Ridge",
+                    "5" => "Mirror Temple",
+                    "6" => "Reflection",
+                    "7" => "Summit",
+                    "8" => "Core",
+                    "9" => "Farewell",
                 ];
 
                 ?>
@@ -81,15 +81,15 @@ $path = str_repeat("../", $depth);
             <ul class="sections">
                 <?php
                 $chapters = [
-                    "1" => "Hoofdstuk 1 - Forsaken City",
-                    "2" => "Hoofdstuk 2 - Old Site",
-                    "3" => "Hoofdstuk 3 - Celestial Resort",
-                    "4" => "Hoofdstuk 4 - Golden Ridge",
-                    "5" => "Hoofdstuk 5 - Mirror Temple",
-                    "6" => "Hoofdstuk 6 - Reflection",
-                    "7" => "Hoofdstuk 7 - Summit",
-                    "8" => "Hoofdstuk 8 - Core",
-                    "9" => "Hoofdstuk 9 - Farewell",
+                    "1" => "Forsaken City",
+                    "2" => "Old Site",
+                    "3" => "Celestial Resort",
+                    "4" => "Golden Ridge",
+                    "5" => "Mirror Temple",
+                    "6" => "Reflection",
+                    "7" => "Summit",
+                    "8" => "Core",
+                    "9" => "Farewell",
                 ];
                 ?>
                 <li class="section"><a href="<?= $path ?>story/index.html">Naar pagina</a></li>
