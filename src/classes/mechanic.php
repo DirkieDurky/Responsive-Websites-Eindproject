@@ -15,7 +15,7 @@ $mechanics = [
     new Mechanic("Clutter Switch", "Clutter.gif", "3", ["3"]),
     new Mechanic("Clutter", "Clutter_switch.gif", "3", ["3"]),
     new Mechanic("Conveyor Wall", "Fire_wall.gif", "8", ["8", "9"]),
-    new Mechanic("Core Switches", "Coreswitchcombined.jpg", "8", ["8"]),
+    new Mechanic("Core Switches", "Core_switches.jpg", "8", ["8"]),
     new Mechanic("Crystal Heart Gate", "Crystal_heart.gif", "8", ["8", "9"]),
     new Mechanic("Crystal Heart", "Crystal_gate.gif", "all", ["1", "2", "3", "4", "5", "6", "7", "8", "9"]),
     new Mechanic("Dash Platform", "Mirror_platform.gif", "5", ["5", "7", "8B", "8C", "9"]),
