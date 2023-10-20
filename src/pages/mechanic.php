@@ -60,7 +60,7 @@
 
         <div class="container">
             <h2>Andere mechanics</h2>
-            <ul class="related">
+            <ul class="related list">
                 <?php foreach ($mechanics as $mechanic2) : ?>
                     <?php if ($mechanic === $mechanic2) {
                         continue;

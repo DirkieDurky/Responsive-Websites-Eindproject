@@ -17,7 +17,7 @@
     <main class="about-us">
         <h1>Over Ons</h1>
         <hr />
-        <div class="grid">
+        <div class="mozaic">
             <div class="dirk image container">
                 <img src="./assets/about-us/dirk-freijters.jpg" alt="picture Dirk">
             </div>

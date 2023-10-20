@@ -152,7 +152,7 @@ h2 {
 }
 
 /* About-us */
-.about-us .grid {
+.about-us .mozaic {
     display: grid;
     grid-template-areas:
         "a b"
@@ -164,7 +164,7 @@ h2 {
 }
 
 @media screen and (max-width:1024px) {
-    .about-us .grid {
+    .about-us .mozaic {
         grid-template-areas:
             "a"
             "b"
@@ -222,11 +222,10 @@ h2 {
 .contact {
     display: flex;
     flex-direction: column;
+    gap: 2rem;
 }
 
 .content {
-    margin: 2rem;
-
     display: flex;
     flex-direction: column;
     align-items: center;

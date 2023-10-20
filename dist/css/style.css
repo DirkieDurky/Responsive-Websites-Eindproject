@@ -1,112 +1,3 @@
-html {
-    --trans-flag-color-1: #5BCEFA;
-    --trans-flag-color-2: #F5A9B8;
-}
-
-/* Reset CSS */
-main {
-    padding: 1rem 10rem 5rem;
-
-    box-sizing: border-box;
-}
-
-@media screen and (max-width: 1024px) {
-    main {
-        padding: 1rem 5rem 5rem;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    main {
-        padding: 1rem 1rem 5rem;
-    }
-}
-
-h1 {
-    margin-top: 1.5rem;
-    font-size: 2rem;
-    font-weight: 900;
-}
-
-h2 {
-    margin-top: 1.3rem;
-    font-size: 1.5rem;
-    font-weight: 900;
-}
-
-h3 {
-    margin-top: 1.1rem;
-    font-size: 1.3rem;
-    font-weight: 800;
-}
-
-h4 {
-    margin-top: 1rem;
-    font-size: 1.1rem;
-    font-weight: 800;
-}
-
-h5 {
-    margin-top: 0.9rem;
-    font-size: 0.9rem;
-    font-weight: 700;
-}
-
-h6 {
-    margin-top: 0.8rem;
-    font-size: 0.8rem;
-    font-weight: 700;
-}
-
-p {
-    margin-top: 1rem;
-    font-size: 1rem;
-    font-weight: 400;
-}
-
-a {
-    color: var(--trans-flag-color-1);
-    text-decoration: none;
-}
-
-a:visited {
-    color: var(--trans-flag-color-2);
-}
-
-hr {
-    width: 100%;
-    border: 1px solid white;
-    box-sizing: border-box;
-}
-
-.container {
-    margin: 1rem;
-    padding: 1rem;
-
-    background-color: #0000007F;
-    backdrop-filter: blur(8px);
-}
-
-.container :first-child {
-    margin-top: 0;
-}
-
-.container :last-child {
-    margin-bottom: 0;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
-    gap: 2rem;
-}
-
-.flex-wrap {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
 /*
     Eric Meyer's CSS Reset
     http://meyerweb.com/eric/tools/css/reset/ 
@@ -200,10 +91,6 @@ video {
     vertical-align: baseline;
 }
 
-h1 {
-    margin-top: 1.3rem;
-}
-
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -244,6 +131,146 @@ table {
 
 /* End of Reset CSS */
 
+@font-face {
+    font-family: "renogare";
+    src: url("../assets/renogare.otf")
+}
+
+html {
+    scroll-padding-top: 5rem;
+    --trans-flag-color-1: #5BCEFA;
+    --trans-flag-color-2: #F5A9B8;
+}
+
+body {
+    margin: 0;
+
+    background: linear-gradient(#000000BF, #000000BF), url("../assets/overlay.png"), #198FF4;
+
+    background-repeat: repeat;
+    animation: gradient 50s linear infinite;
+
+    font-family: "renogare", serif;
+    color: white;
+}
+
+@keyframes gradient {
+    from {
+        background-position: 0 0
+    }
+
+    to {
+        background-position: 300vw 200vh
+    }
+}
+
+main {
+    padding: 1rem 10rem 5rem;
+
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1024px) {
+    main {
+        padding: 1rem 5rem 5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    main {
+        padding: 1rem 1rem 5rem;
+    }
+}
+
+h1 {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+h2 {
+    margin-top: 1.3rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+h3 {
+    margin-top: 1.1rem;
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+h4 {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+
+h5 {
+    margin-top: 0.9rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+h6 {
+    margin-top: 0.8rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+a {
+    color: var(--trans-flag-color-1);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--trans-flag-color-2);
+}
+
+hr {
+    width: auto;
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: square inside;
+}
+
+.container {
+    margin: 1rem;
+    padding: 1rem;
+
+    background-color: #0000007F;
+    backdrop-filter: blur(8px);
+}
+
+.container :first-child {
+    margin-top: 0;
+}
+
+.container :last-child {
+    margin-bottom: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    gap: 2rem;
+}
+
+.flex-wrap {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
 .fragment {
     position: relative;
 }
@@ -270,35 +297,4 @@ table {
     transform: translate(-100%, -50%);
     opacity: 1;
     transition-timing-function: ease-out;
-}
-
-@font-face {
-    font-family: "renogare";
-    src: url("../assets/renogare.otf")
-}
-
-html {
-    scroll-padding-top: 5rem;
-}
-
-body {
-    margin: 0;
-
-    background: linear-gradient(#000000BF, #000000BF), url("../assets/overlay.png"), #198FF4;
-
-    background-repeat: repeat;
-    animation: gradient 50s linear infinite;
-
-    font-family: "renogare", serif;
-    color: white;
-}
-
-@keyframes gradient {
-    from {
-        background-position: 0 0
-    }
-
-    to {
-        background-position: 300vw 200vh
-    }
 }

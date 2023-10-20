@@ -15,8 +15,10 @@
     <?php require("src/header.php"); ?>
 
     <main class="contact">
-        <h1>Contact</h1>
-        <hr />
+        <div>
+            <h1>Contact</h1>
+            <hr />
+        </div>
         <div class="content">
             <p>Heb je een vraag, suggestie, of wil je om een andere reden contact met ons opnemen? Dat kan via dit formulier!</p>
             <form class="contact-form container">
