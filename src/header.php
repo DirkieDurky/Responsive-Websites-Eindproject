@@ -10,7 +10,9 @@ $path = $depth == 0 ? "./" : str_repeat("../", $depth);
         <li class="page page-title"><a href="<?= $path ?>index.html">Startpagina</a></li>
         <li class="page dropdown">
             <input class="dropdown-toggle" id="mechanics-toggle" type="checkbox">
-            <label class="dropdown-label page-title" for="mechanics-toggle"><a class="dropdown-arrow" href="<?= $path ?>mechanics.html">Mechanics</a></label>
+            <label class="dropdown-label page-title" for="mechanics-toggle">
+                <a class="dropdown-arrow" href="<?= $path ?>mechanics.html">Mechanics</a>
+            </label>
             <ul class="sections">
                 <?php
 
@@ -48,7 +50,9 @@ $path = $depth == 0 ? "./" : str_repeat("../", $depth);
 
         <li class="page dropdown">
             <input class="dropdown-toggle" id="techniques-toggle" type="checkbox">
-            <label class="dropdown-label page-title" for="techniques-toggle"><a class="dropdown-arrow" href="<?= $path ?>techniques.html">Technieken</a></label>
+            <label class="dropdown-label page-title" for="techniques-toggle">
+                <a class="dropdown-arrow" href="<?= $path ?>techniques.html">Technieken</a>
+            </label>
             <ul class="sections">
                 <?php
 
