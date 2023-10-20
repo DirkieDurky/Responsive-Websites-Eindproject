@@ -26,7 +26,7 @@
                 <?php
                 foreach ($mechanic->chapters as $chapter) {
                 ?>
-                    <a href="../../mechanics#chapter-<?= substr($chapter, 0, 1) ?>"><?= $chapter ?></a>
+                    <a href="../../mechanics/index.html#chapter-<?= substr($chapter, 0, 1) ?>"><?= $chapter ?></a>
                 <?php
                 }
                 ?>
