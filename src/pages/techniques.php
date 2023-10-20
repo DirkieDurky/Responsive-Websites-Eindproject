@@ -19,9 +19,10 @@
         <hr />
         <p><?= Lorem::paragraph() ?></p>
 
+        <img class="checkpoint-image" src="./assets/checkpoints/7_e-00b.png" alt="Foto van spel">
         <h2 id="dash-tech"><a href="#dash-tech" class="fragment">Technieken met dash</a></h2>
         <p><?= Lorem::paragraph(2, 10) ?></p>
-        <hr /><br />
+        <hr class="full-width" /><br />
         <?php
         foreach (array_filter($techniques, function ($item) {
             return $item->type == "dash-tech";
@@ -34,9 +35,10 @@
         <?php
         }
         ?>
+        <img class="checkpoint-image" src="./assets/checkpoints/10_i-00.png" alt="Foto van spel">
         <h2 id="dashless-tech"><a href="#dashless-tech" class="fragment">Technieken zonder dash</a></h2>
         <p><?= Lorem::paragraph(2, 10) ?></p>
-        <hr /><br />
+        <hr class="full-width" /><br />
         <?php
         foreach (array_filter($techniques, function ($item) {
             return $item->type == "dashless-tech";

@@ -20,7 +20,7 @@
         <hr />
         <p><?= Lorem::paragraph() ?></p>
 
-        <img class="checkpoint-image" src="./assets/checkpoints/3H.png" alt="Foto hoofdstuk">
+        <img class="checkpoint-image" src="./assets/checkpoints/3H.png" alt="Foto van spel">
         <h2 class="chapter" id="chapter-all"><a href="#chapter-all" class="fragment">Alle hoofdstukken</a></h2>
         <p><?= Lorem::paragraph(2, 10) ?></p>
         <hr class="full-width" /><br />
@@ -65,7 +65,7 @@
 
         ?>
         <?php foreach ($sections as $section => $sectionName) : ?>
-            <img class="checkpoint-image" src="./assets/checkpoints/<?= $images[$section] ?>" alt="Foto hoofdstuk">
+            <img class="checkpoint-image" src="./assets/checkpoints/<?= $images[$section] ?>" alt="Foto van spel">
             <h2 class="chapter" id="chapter-<?= $section ?>"><a href="#chapter-<?= $section ?>" class="fragment"><?= $sectionName ?></a></h2>
             <p><?= Lorem::paragraph(2, 10) ?></p>
             <hr class="full-width" /><br />
