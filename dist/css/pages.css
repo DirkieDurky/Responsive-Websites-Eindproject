@@ -27,10 +27,6 @@
     margin: 0;
     padding: 0;
 
-    /* display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
-    gap: 2rem; */
-
     list-style: none;
 }
 
@@ -99,7 +95,6 @@ h2 {
     content: '';
     position: absolute;
     inset: 0;
-    /* padding: 1rem; */
     background-color: white;
     transform: rotate(2deg);
     top: 0;
@@ -177,10 +172,17 @@ h2 {
             "d";
         grid-template-columns: 1fr;
     }
+
+    .arrow-icon.left {
+        transform: rotateZ(90deg);
+    }
+
+    .arrow-icon.right {
+        transform: rotateZ(-90deg);
+    }
 }
 
 .about-us .dirk.image {
-    height: min-content;
     grid-area: a;
 }
 
@@ -189,12 +191,16 @@ h2 {
 }
 
 .about-us .cas.image {
-    height: min-content;
     grid-area: c;
 }
 
 .about-us .cas.text {
     grid-area: d;
+    text-align: right;
+}
+
+.about-us .image {
+    height: min-content;
 }
 
 .about-us .about-me {
@@ -209,16 +215,7 @@ h2 {
 .arrow-icon {
     width: 1.5rem;
     transition: transform 1s;
-}
-
-@media screen and (max-width:1024px) {
-    .arrow-icon.left {
-        transform: rotateZ(90deg);
-    }
-
-    .arrow-icon.right {
-        transform: rotateZ(-90deg);
-    }
+    margin: 0 0.5rem;
 }
 
 /* Contact */
@@ -228,7 +225,7 @@ h2 {
 }
 
 .content {
-    margin: auto 0;
+    margin: 2rem;
 
     display: flex;
     flex-direction: column;
@@ -241,29 +238,49 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+
+    margin-top: 2rem;
 }
 
 .contact-form input,
 .contact-form textarea {
     padding: 0.5rem;
     width: 100%;
+    margin-top: 0.5rem;
     background-color: black;
     color: white;
     border: none;
+    border-radius: 3px;
     box-sizing: border-box;
+}
+
+.contact-form input:active,
+.contact-form textarea:active {
+    outline: solid var(--trans-flag-color-2) 2px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: solid var(--trans-flag-color-1) 2px;
 }
 
 .contact-form input[type="submit"] {
     cursor: pointer;
 }
 
+.contact-form input[type="submit"]:active {
+    outline: solid var(--trans-flag-color-2) 2px;
+}
+
 .contact-form textarea {
     height: 10rem;
+    resize: vertical;
 }
 
 .label-container {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 2rem;
 }
 
@@ -293,6 +310,12 @@ h2 {
     .mechanic .card {
         margin-left: auto;
         float: unset;
+    }
+
+    .info {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 }
 
