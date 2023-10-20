@@ -62,9 +62,10 @@
             </div>
         </div>
         <div class="sources">
-            De afbeeldingen en gifs op deze website komen van <a href="https://celeste.ink/w/index.php?title=Main_Page&oldid=5600">Celeste Wiki</a><br>
-            Het Renogare font is van <a href="https://www.dafont.com/renogare.font">Dafont.com</a><br>
-            Icoontjes komen van <a href="https://fontawesome.com/icons">FontAwesome</a>
+            De afbeeldingen en gifs op deze website komen van <a href="https://celeste.ink/w/index.php?title=Main_Page&oldid=5600" target="_blank">Celeste Wiki</a><br>
+            Het Renogare font is van <a href="https://www.dafont.com/renogare.font" target="_blank">Dafont.com</a><br>
+            Icoontjes komen van <a href="https://fontawesome.com/icons" target="_blank">FontAwesome</a><br>
+            <a href="https://www.celestegame.com/" target="_blank">Celeste</a> is een game van <a href="https://www.exok.com/games.html">EXOK Games</a>
         </div>
     </main>
 </body>
