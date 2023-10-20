@@ -3,6 +3,9 @@ require_once "classes/mechanic.php";
 require_once "classes/technique.php";
 require_once "classes/Lorem.php";
 
+echo "We're currently preparing for export so regenerating is not possible";
+exit;
+
 $depth = 0;
 
 ob_start();
