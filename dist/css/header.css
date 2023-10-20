@@ -71,6 +71,7 @@
     color: white;
     transform: translateX(0.5rem);
     transition: transform 0.3s;
+    filter: invert();
 }
 
 .page-header .sections {
