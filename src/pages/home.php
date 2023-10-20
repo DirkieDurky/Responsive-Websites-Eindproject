@@ -32,9 +32,10 @@
             Binnen een aantal van deze pagina's kan je zelfs nog navigeren naar nog meer pagina's, natuurlijk kan je ook altijd nog gebruik maken van het navigatiemenu hierboven.
         </p>
         <p>
-            Deze site heeft de stijl van een wiki voor de game <a href="https://www.celestegame.com/">Celeste</a>, het is zeker een aanrader. Veel plezier!
+            Deze site heeft de stijl van een wiki voor de game <a href="https://www.celestegame.com/">Celeste</a>.<br />
+            Een platformer die wij allebei graag spelen. Het is zeker een aanrader! Veel plezier!
         </p>
-        <div class=" grid">
+        <div class="grid">
             <div class="container">
                 <h1><a href="mechanics">Mechanics</a></h1>
                 <p><?= Lorem::text(2, 3, 15, "</p><p>") ?></p>
