@@ -1,68 +1,12 @@
-.fragment {
-    position: relative;
-}
-
-.fragment,
-.fragment:visited {
-    color: white;
-}
-
-.fragment::before {
-    content: "#";
-    position: absolute;
-
-    top: 50%;
-    opacity: 0;
-    transform: translate(-50%, -50%);
-
-    will-change: transform;
-    transition: transform .5s ease-in, opacity .5s ease-in;
-    font-size: 1.5rem;
-}
-
-.fragment:hover::before {
-    transform: translate(-100%, -50%);
-    opacity: 1;
-    transition-timing-function: ease-out;
-}
-
-@font-face {
-    font-family: "renogare";
-    src: url("../assets/renogare.otf")
-}
-
 html {
-    scroll-padding-top: 5rem;
-}
-
-body {
-    margin: 0;
-    min-height: 100vh;
-
-    background: linear-gradient(#000000BF, #000000BF), url("../assets/overlay.png"), #198FF4;
-
-    background-repeat: repeat;
-    animation: gradient 50s linear infinite;
-
-    font-family: "renogare", serif;
-    color: white;
-}
-
-@keyframes gradient {
-    from {
-        background-position: 0 0
-    }
-
-    to {
-        background-position: 300vw 200vh
-    }
+    --trans-flag-color-1: #5BCEFA;
+    --trans-flag-color-2: #F5A9B8;
 }
 
 /* Reset CSS */
 main {
     padding: 1rem 10rem 5rem;
 
-    min-height: calc(100vh - 3.5rem);
     box-sizing: border-box;
 }
 
@@ -121,12 +65,12 @@ p {
 }
 
 a {
-    color: #5BCEFA;
+    color: var(--trans-flag-color-1);
     text-decoration: none;
 }
 
 a:visited {
-    color: #F5A9B8;
+    color: var(--trans-flag-color-2);
 }
 
 hr {
@@ -161,4 +105,200 @@ hr {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+}
+
+/*
+    Eric Meyer's CSS Reset
+    http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+h1 {
+    margin-top: 1.3rem;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* End of Reset CSS */
+
+.fragment {
+    position: relative;
+}
+
+.fragment,
+.fragment:visited {
+    color: white;
+}
+
+.fragment::before {
+    content: "#";
+    position: absolute;
+
+    top: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+
+    will-change: transform;
+    transition: transform .5s ease-in, opacity .5s ease-in;
+    font-size: 1.5rem;
+}
+
+.fragment:hover::before {
+    transform: translate(-100%, -50%);
+    opacity: 1;
+    transition-timing-function: ease-out;
+}
+
+@font-face {
+    font-family: "renogare";
+    src: url("../assets/renogare.otf")
+}
+
+html {
+    scroll-padding-top: 5rem;
+}
+
+body {
+    margin: 0;
+
+    background: linear-gradient(#000000BF, #000000BF), url("../assets/overlay.png"), #198FF4;
+
+    background-repeat: repeat;
+    animation: gradient 50s linear infinite;
+
+    font-family: "renogare", serif;
+    color: white;
+}
+
+@keyframes gradient {
+    from {
+        background-position: 0 0
+    }
+
+    to {
+        background-position: 300vw 200vh
+    }
 }
