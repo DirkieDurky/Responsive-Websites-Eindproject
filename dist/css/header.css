@@ -88,12 +88,15 @@
 
 .page-header .section {
     position: relative;
-    padding: 0 1rem;
 
     width: 100%;
     box-sizing: border-box;
 
     transition: background-color 400ms ease-in;
+}
+
+.page-header .section a {
+    padding: 0 1rem;
 }
 
 .page-header .section:hover {
@@ -118,7 +121,7 @@
     visibility: visible;
 }
 
-.page-header .topic {
+.page-header .topic a {
     padding: 0 1rem;
 }
 
@@ -142,6 +145,10 @@
 
     .page-header .section {
         margin: 0.5rem;
+    }
+
+    .page-header .section a {
+        padding: 0;
     }
 
     .page-header .topic {
