@@ -9,6 +9,7 @@
     z-index: 1;
 
     transition: background-color 500ms;
+    max-height: 100vh;
 }
 
 .page-header:hover {
@@ -131,7 +132,24 @@
     color: white;
 }
 
-@media screen and (max-width: 1024px) {
+@media (pointer:none),
+(pointer:coarse) and (max-width: 1024px) {
+    .page-header {
+        font-size: small;
+        white-space: wrap;
+        overflow: scroll;
+    }
+
+    .page-header .section {
+        margin: 0.5rem;
+    }
+
+    .page-header .topic {
+        margin: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 1100px) {
     .page-header .menu-toggle {
         padding: 1rem 2rem;
         width: 100%;
