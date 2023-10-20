@@ -1,16 +1,16 @@
 <?php
 
-$path = str_repeat("../", $depth);
+$path = $depth == 0 ? "./" : str_repeat("../", $depth);
 
 ?>
 <nav class="page-header">
     <input class="dropdown-toggle" id="pages-toggle" type="checkbox">
-    <label class="menu-toggle" for="pages-toggle"><img class="menu-icon" src="<?= $path . "assets/bars-solid.svg" ?>" alt="menu-icon"></label>
+    <label class="menu-toggle" for="pages-toggle"><img class="menu-icon" src="<?= $path ?>assets/bars-solid.svg" alt="menu-icon"></label>
     <ul class="pages">
         <li class="page page-title"><a href="<?= $path ?>index.html">Startpagina</a></li>
         <li class="page dropdown">
             <input class="dropdown-toggle" id="mechanics-toggle" type="checkbox">
-            <label class="dropdown-label page-title" for="mechanics-toggle"><a class="dropdown-arrow" href="<?= $path ?>mechanics/index.html">Mechanics</a></label>
+            <label class="dropdown-label page-title" for="mechanics-toggle"><a class="dropdown-arrow" href="<?= $path ?>mechanics.html">Mechanics</a></label>
             <ul class="sections">
                 <?php
 
@@ -28,17 +28,17 @@ $path = str_repeat("../", $depth);
                 ];
 
                 ?>
-                <li class="section"><a href="<?= $path ?>mechanics/index.html">Naar pagina</a></li>
+                <li class="section"><a href="<?= $path ?>mechanics.html">Naar pagina</a></li>
                 <?php foreach ($chapters as $chapter => $chapterName) : ?>
                     <li class="section dropdown">
-                        <a class="dropdown-arrow" href="<?= $path ?>mechanics/index.html#chapter-<?= $chapter ?>"><?= $chapterName ?></a>
+                        <a class="dropdown-arrow" href="<?= $path ?>mechanics.html#chapter-<?= $chapter ?>"><?= $chapterName ?></a>
                         <ul class="topics">
-                            <li class="topic"><a href="<?= $path ?>mechanics/index.html#chapter-<?= $chapter ?>">Naar onderdeel</a></li>
+                            <li class="topic"><a href="<?= $path ?>mechanics.html#chapter-<?= $chapter ?>">Naar onderdeel</a></li>
                             <?php foreach ($mechanics as $headerMechanic) : ?>
                                 <?php if ($headerMechanic->home != $chapter) {
                                     continue;
                                 } ?>
-                                <li class="topic"><a href="<?= $path ?>mechanics/mechanic/<?= $headerMechanic->title ?>.html"><?= $headerMechanic->name ?></a></li>
+                                <li class="topic"><a href="<?= $path ?>mechanics/<?= $headerMechanic->title ?>.html"><?= $headerMechanic->name ?></a></li>
                             <?php endforeach ?>
                         </ul>
                     </li>
@@ -48,7 +48,7 @@ $path = str_repeat("../", $depth);
 
         <li class="page dropdown">
             <input class="dropdown-toggle" id="techniques-toggle" type="checkbox">
-            <label class="dropdown-label page-title" for="techniques-toggle"><a class="dropdown-arrow" href="<?= $path ?>techniques/index.html">Technieken</a></label>
+            <label class="dropdown-label page-title" for="techniques-toggle"><a class="dropdown-arrow" href="<?= $path ?>techniques.html">Technieken</a></label>
             <ul class="sections">
                 <?php
 
@@ -58,17 +58,17 @@ $path = str_repeat("../", $depth);
                 ];
 
                 ?>
-                <li class="section"><a href="<?= $path ?>techniques/index.html">Naar pagina</a></li>
+                <li class="section"><a href="<?= $path ?>techniques.html">Naar pagina</a></li>
                 <?php foreach ($types as $type => $typeName) : ?>
                     <li class="section dropdown">
-                        <a class="dropdown-arrow" href="<?= $path ?>techniques/index.html#<?= $type ?>"><?= $typeName ?></a>
+                        <a class="dropdown-arrow" href="<?= $path ?>techniques.html#<?= $type ?>"><?= $typeName ?></a>
                         <ul class="topics">
-                            <li class="topic"><a href="<?= $path ?>techniques/index.html#<?= $type ?>">Naar onderdeel</a></li>
+                            <li class="topic"><a href="<?= $path ?>techniques.html#<?= $type ?>">Naar onderdeel</a></li>
                             <?php foreach ($techniques as $headerTechnique) : ?>
                                 <?php if ($headerTechnique->type != $type) {
                                     continue;
                                 } ?>
-                                <li class="topic"><a href="<?= $path ?>techniques/technique/<?= $headerTechnique->title ?>.html"><?= $headerTechnique->title ?></a></li>
+                                <li class="topic"><a href="<?= $path ?>techniques/<?= $headerTechnique->title ?>.html"><?= $headerTechnique->title ?></a></li>
                             <?php endforeach ?>
                         </ul>
                     </li>
@@ -77,7 +77,7 @@ $path = str_repeat("../", $depth);
         </li>
         <li class="page dropdown">
             <input class="dropdown-toggle" id="story-toggle" type="checkbox">
-            <label class="dropdown-label page-title" for="story-toggle"><a class="dropdown-arrow" href="<?= $path ?>story/index.html">Verhaal</a></label>
+            <label class="dropdown-label page-title" for="story-toggle"><a class="dropdown-arrow" href="<?= $path ?>story.html">Verhaal</a></label>
             <ul class="sections">
                 <?php
                 $chapters = [
@@ -92,18 +92,14 @@ $path = str_repeat("../", $depth);
                     "9" => "Farewell",
                 ];
                 ?>
-                <li class="section"><a href="<?= $path ?>story/index.html">Naar pagina</a></li>
-                <?php
-                foreach ($chapters as $chapter => $chapterName) {
-                ?>
-                    <li class="section"><a href="<?= $path ?>story/index.html#chapter-<?= $chapter ?>"><?= $chapterName ?></a></li>
-                <?php
-                }
-                ?>
+                <li class="section"><a href="<?= $path ?>story.html">Naar pagina</a></li>
+                <?php foreach ($chapters as $chapter => $chapterName) : ?>
+                    <li class="section"><a href="<?= $path ?>story.html#chapter-<?= $chapter ?>"><?= $chapterName ?></a></li>
+                <?php endforeach ?>
             </ul>
         </li>
-        <li class="page page-title"><a href="<?= $path ?>photo-gallery/index.html">Fotogallerij</a></li>
-        <li class="page page-title"><a href="<?= $path ?>about-us/index.html">Over ons</a></li>
-        <li class="page page-title"><a href="<?= $path ?>contact/index.html">Contact</a></li>
+        <li class="page page-title"><a href="<?= $path ?>photo-gallery.html">Fotogallerij</a></li>
+        <li class="page page-title"><a href="<?= $path ?>about-us.html">Over ons</a></li>
+        <li class="page page-title"><a href="<?= $path ?>contact.html">Contact</a></li>
     </ul>
 </nav>

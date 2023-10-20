@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Celeste - <?= $technique->name ?></title>
-    <link rel="icon" href="../../assets/ico.png">
-    <link rel="stylesheet" type="text/css" href="../../css/style.css">
-    <link rel="stylesheet" type="text/css" href="../../css/header.css">
-    <link rel="stylesheet" type="text/css" href="../../css/pages.css">
+    <link rel="icon" href="../assets/ico.png">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/pages.css">
 </head>
 
 <body>
@@ -21,7 +21,7 @@
         <?php if ($technique->gifPath != null) : ?>
             <div class="card container">
                 <h2><?= $technique->name ?></h2>
-                <img src="<?= $technique->gifPath ?>" alt="">
+                <img src="../assets/techniques/<?= $technique->gifPath ?>" alt="">
             </div>
         <?php endif ?>
 

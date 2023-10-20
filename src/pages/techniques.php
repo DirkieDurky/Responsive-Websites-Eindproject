@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Celeste - Technieken</title>
-    <link rel="icon" href="../assets/ico.png">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <link rel="stylesheet" type="text/css" href="../css/header.css">
-    <link rel="stylesheet" type="text/css" href="../css/pages.css">
+    <link rel="icon" href="./assets/ico.png">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/header.css">
+    <link rel="stylesheet" type="text/css" href="./css/pages.css">
 </head>
 
 <body>
@@ -27,7 +27,7 @@
             return $item->type == "dash-tech";
         }) as $technique) {
         ?>
-            <h3><a href="./technique/<?= $technique->title ?>.html"><?= $technique->name ?></a></h3>
+            <h3><a href="./techniques/<?= $technique->title ?>.html"><?= $technique->name ?></a></h3>
             <p>
                 <?= Lorem::paragraph(3); ?>
             </p>
@@ -42,7 +42,7 @@
             return $item->type == "dashless-tech";
         }) as $technique) {
         ?>
-            <h3><a href="./technique/<?= $technique->title ?>.html"><?= $technique->name ?></a></h3>
+            <h3><a href="./techniques/<?= $technique->title ?>.html"><?= $technique->name ?></a></h3>
             <p>
                 <?= Lorem::paragraph(3); ?>
             </p>

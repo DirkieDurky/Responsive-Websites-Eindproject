@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Celeste - Fotogallerij</title>
-    <link rel="icon" href="../assets/ico.png">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <link rel="stylesheet" type="text/css" href="../css/header.css">
-    <link rel="stylesheet" type="text/css" href="../css/pages.css">
+    <link rel="icon" href="./assets/ico.png">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/header.css">
+    <link rel="stylesheet" type="text/css" href="./css/pages.css">
 </head>
 
 <body>
@@ -24,7 +24,7 @@
 
             foreach ($photos as $photo) {
             ?>
-                <img src="<?= "../assets/photo-gallery/" . $photo ?>" alt="gallery-image">
+                <img src="./assets/photo-gallery/<?= $photo ?>" alt="gallery-image">
             <?php
             }
             ?>

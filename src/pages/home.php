@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Celeste</title>
-    <link rel="icon" href="assets/ico.png">
+    <link rel="icon" href="./assets/ico.png">
 
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/header.css">
-    <link rel="stylesheet" type="text/css" href="css/pages.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/header.css">
+    <link rel="stylesheet" type="text/css" href="./css/pages.css">
 </head>
 
 <body>
-    <a class="header-image-link" href="index.html">
-        <img class="header-image" src="assets/logo.png" alt="Celeste logo">
+    <a class="header-image-link" href="">
+        <img class="header-image" src="./assets/logo.png" alt="Celeste logo">
     </a>
     <?php require("src/header.php"); ?>
 
@@ -38,27 +38,27 @@
         </p>
         <div class="grid">
             <div class="container">
-                <h1><a href="mechanics">Mechanics</a></h1>
+                <h1><a href="./mechanics.html">Mechanics</a></h1>
                 <p><?= Lorem::text(2, 3, 15, "</p><p>") ?></p>
             </div>
             <div class="container">
-                <h1><a href="techniques">Technieken</a></h1>
+                <h1><a href="./techniques.html">Technieken</a></h1>
                 <p><?= Lorem::text(2, 3, 15, "</p><p>") ?></p>
             </div>
             <div class="container">
-                <h1><a href="story">Verhaal</a></h1>
+                <h1><a href="./story.html">Verhaal</a></h1>
                 <p><?= Lorem::text(2, 3, 15, "</p><p>") ?></p>
             </div>
             <div class="container">
-                <h1><a href="photo-gallery">Fotogallerij</a></h1>
+                <h1><a href="./photo-gallery.html">Fotogallerij</a></h1>
                 <p><?= Lorem::text(2, 3, 15, "</p><p>") ?></p>
             </div>
             <div class="container">
-                <h1><a href="about-us">Over ons</a></h1>
+                <h1><a href="./about-us.html">Over ons</a></h1>
                 <p><?= Lorem::text(2, 3, 15, "</p><p>") ?></p>
             </div>
             <div class="container">
-                <h1><a href="contact">Contact</a></h1>
+                <h1><a href="./contact.html">Contact</a></h1>
                 <p><?= Lorem::text(2, 3, 15, "</p><p>") ?></p>
             </div>
         </div>

@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Celeste - <?= $mechanic->name ?></title>
-    <link rel="icon" href="../../assets/ico.png">
+    <link rel="icon" href="../assets/ico.png">
 
-    <link rel="stylesheet" type="text/css" href="../../css/style.css">
-    <link rel="stylesheet" type="text/css" href="../../css/header.css">
-    <link rel="stylesheet" type="text/css" href="../../css/pages.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/pages.css">
 </head>
 
 <body>
@@ -21,13 +21,13 @@
 
         <div class="card container">
             <h2><?= $mechanic->name ?></h2>
-            <img src="../../assets/mechanics/<?= $mechanic->asset ?>" alt="">
+            <img src="../assets/mechanics/<?= $mechanic->asset ?>" alt="">
             <h3>Found in chapters</h3>
             <p>
                 <?php
                 foreach ($mechanic->chapters as $chapter) {
                 ?>
-                    <a href="../../mechanics/index.html#chapter-<?= substr($chapter, 0, 1) ?>"><?= $chapter ?></a>
+                    <a href="../mechanics.html#chapter-<?= substr($chapter, 0, 1) ?>"><?= $chapter ?></a>
                 <?php
                 }
                 ?>
