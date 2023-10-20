@@ -298,3 +298,13 @@ ul {
     opacity: 1;
     transition-timing-function: ease-out;
 }
+
+.checkpoint-image {
+    margin: 1rem;
+    width: 15rem;
+    float: right;
+}
+
+.full-width {
+    width: 100%;
+}

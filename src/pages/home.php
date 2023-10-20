@@ -13,9 +13,7 @@
 </head>
 
 <body>
-    <a class="header-image-link" href="">
-        <img class="header-image" src="./assets/logo.png" alt="Celeste logo">
-    </a>
+    <img class="header-image" src="./assets/logo.png" alt="Celeste logo">
     <?php require("src/header.php"); ?>
 
     <main class="home">

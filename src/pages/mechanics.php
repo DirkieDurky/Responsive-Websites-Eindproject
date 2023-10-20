@@ -20,9 +20,10 @@
         <hr />
         <p><?= Lorem::paragraph() ?></p>
 
+        <img class="checkpoint-image" src="./assets/checkpoints/3H.png" alt="Foto hoofdstuk">
         <h2 class="chapter" id="chapter-all"><a href="#chapter-all" class="fragment">Alle hoofdstukken</a></h2>
         <p><?= Lorem::paragraph(2, 10) ?></p>
-        <hr /><br />
+        <hr class="full-width" /><br />
         <ul class="mechanics grid">
             <?php foreach ($mechanics as $mechanic) : ?>
                 <?php if ($mechanic->home !== "all") {
@@ -50,11 +51,24 @@
             "9" => "Hoofdstuk 9 - Farewell",
         ];
 
+        $images = [
+            "1" => "1.png",
+            "2" => "2.png",
+            "3" => "3.png",
+            "4" => "4.png",
+            "5" => "5.png",
+            "6" => "6.png",
+            "7" => "7.png",
+            "8" => "9.png",
+            "9" => "10_a-00.png",
+        ]
+
         ?>
         <?php foreach ($sections as $section => $sectionName) : ?>
+            <img class="checkpoint-image" src="./assets/checkpoints/<?= $images[$section] ?>" alt="Foto hoofdstuk">
             <h2 class="chapter" id="chapter-<?= $section ?>"><a href="#chapter-<?= $section ?>" class="fragment"><?= $sectionName ?></a></h2>
             <p><?= Lorem::paragraph(2, 10) ?></p>
-            <hr /><br />
+            <hr class="full-width" /><br />
             <ul class="mechanics grid">
                 <?php foreach ($mechanics as $mechanic) : ?>
                     <?php if ($mechanic->home != $section) {
