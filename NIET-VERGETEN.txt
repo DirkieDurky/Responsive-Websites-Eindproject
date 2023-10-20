@@ -1,2 +1,0 @@
-De css bestanden moeten nog samengevoegd worden naar een "style-pages.css" ofzo
-De html bestanden door een semantic html tester halen
