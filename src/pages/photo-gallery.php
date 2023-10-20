@@ -21,10 +21,16 @@
         <div class="gallery">
             <?php
             $photos = array_values(array_diff(scandir(__DIR__ . "/../../dist/assets/photo-gallery"), ["..", "."]));
+            $completeScreens = array_values(array_diff(scandir(__DIR__ . "/../../dist/assets/celeste-complete-screens"), ["..", "."]));
 
             foreach ($photos as $photo) {
             ?>
                 <img src="./assets/photo-gallery/<?= $photo ?>" alt="gallery-image">
+            <?php
+            }
+            foreach ($completeScreens as $photo) {
+            ?>
+                <img src="./assets/celeste-complete-screens/<?= $photo ?>" alt="gallery-image">
             <?php
             }
             ?>
